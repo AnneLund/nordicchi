@@ -52,10 +52,11 @@ body header .main-nav .nav-links a {
   font-family: "Caveat", cursive;
   font-weight: 400;
   padding: 15px;
+  border-radius: 40px;
 }
 body header .main-nav .nav-links a:hover {
-  background-color: rgba(180, 110, 110, 0.747);
-  transition: ease-in-out 300ms;
+  background-color: #f5f3ef;
+  transition: ease-in-out 1s;
 }
 body header .burger {
   display: none;

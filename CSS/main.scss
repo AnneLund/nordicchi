@@ -79,9 +79,10 @@ body {
         a {
           @include links;
           padding: 15px;
+          border-radius: 40px;
           &:hover {
-            background-color: $softred;
-            transition: ease-in-out 300ms;
+            background-color: $farve;
+            transition: ease-in-out 1s;
           }
         }
       }
