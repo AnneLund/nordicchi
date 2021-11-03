@@ -13,75 +13,80 @@ body {
   max-width: 1630px;
 }
 body header {
-  height: 10vw;
   background-color: #f5f3ef;
 }
 body header h1 {
-  font-size: 5vw;
+  font-size: 7vw;
   font-family: "Caveat", cursive;
   padding: 20px 10px;
 }
-body .main-nav {
+body header .main-nav {
   display: flex;
-  height: 15vh;
+  height: 17vh;
   justify-content: space-between;
   align-items: center;
   color: #daf8e3;
   background: #b68877;
   overflow: hidden;
 }
-body .main-nav .logo img {
-  width: 95px;
+body header .main-nav .logo {
+  width: 120px;
 }
-body .main-nav .nav-links {
+body header .main-nav .logo img {
+  width: 100%;
+}
+body header .main-nav .nav-links {
   display: flex;
   width: 50%;
   justify-content: space-around;
 }
-body .main-nav .nav-links a {
+body header .main-nav .nav-links a {
   font-size: 25px;
   color: black;
   text-decoration: none;
   font-family: "Caveat", cursive;
 }
-body .burger {
+body header .burger {
   display: none;
   padding: 0.5rem;
   cursor: pointer;
 }
-body .line {
+body header .line {
   height: 2px;
   width: 35px;
   margin: 0.5rem 0;
   background: #daf8e3;
   transition: transform 0.75s ease, opacity 0.75s ease;
 }
-body .main-nav.show .line1 {
+body header .main-nav.show .line1 {
   transform: translate(-10px) rotate(45deg) translate(15px);
 }
-body .main-nav.show .line2 {
+body header .main-nav.show .line2 {
   opacity: 0;
 }
-body .main-nav.show .line3 {
+body header .main-nav.show .line3 {
   transform: translate(-10px) rotate(-45deg) translate(15px);
 }
-body .main-nav.show .nav-links {
+body header .main-nav.show .nav-links {
   transform: translateX(0%);
 }
-@media screen and (max-width: 800px) {
-  body .nav-links {
+@media screen and (max-width: 1200px) {
+  body header .nav-links {
     width: 60%;
   }
 }
 @media screen and (max-width: 800px) {
-  body .burger {
+  body header .burger {
     display: block;
   }
-  body .nav-links {
+  body header h1 {
+    font-size: 15vw;
+  }
+  body header .nav-links {
     position: fixed;
-    top: 8vh;
+    top: 14.5vh;
     right: 0;
-    height: 92vh;
+    height: 80vh;
     width: 50%;
     flex-direction: column;
     align-items: center;
@@ -92,7 +97,7 @@ body .main-nav.show .nav-links {
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
   }
 }
-body .text {
+body header .text {
   height: 100vh;
   background-color: #f5f3ef;
 }/*# sourceMappingURL=main.css.map */
