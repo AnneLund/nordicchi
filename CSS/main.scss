@@ -1,63 +1,150 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  color: inherit;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Open Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap");
 
 // COLORMODS
 
-$links: rgba(146, 110, 110, 0.867);
+$links: rgba(133, 80, 80, 0.867);
+$farve: #f5f3ef;
+
+// MIXINS
 
 @mixin links {
   font-size: 22px;
   color: black;
   text-decoration: none;
+  font-family: "Caveat", cursive;
+}
+
+@mixin title {
+  font-size: 5vw;
+  font-family: "Caveat", cursive;
 }
 
 body {
   max-width: 1630px;
+
   header {
-    background-color: grey;
+    background-color: $farve;
+
+    height: 18vh;
     h1 {
-      font-size: 5vw;
+      @include title;
     }
-    nav {
-      position: relative;
-      background-color: rgb(250, 249, 249);
-      height: 12vh;
+    .main-nav {
+      display: flex;
+      height: 15vh;
+      justify-content: space-between;
+      align-items: center;
+      color: #daf8e3;
+      background: $links;
+      overflow: hidden;
 
-      a {
-        img {
-          position: absolute;
-          width: 84px;
-        }
+      img {
+        width: 100px;
       }
-
-      ul {
+      .nav-links {
         display: flex;
-        position: relative;
-        top: 22px;
-        float: right;
-        margin: 0 30px;
-        li {
-          list-style-type: none;
-          a {
-            @include links;
-            padding: 15px 60px;
-
-            &:hover {
-              background-color: rgb(112, 125, 139);
-            }
-          }
+        width: 40%;
+        justify-content: space-around;
+        .logo {
+          padding: 0 2rem;
         }
+        a {
+          @include links;
+        }
+      }
+      .burger {
+        display: none;
+        padding: 0.5rem;
+        cursor: pointer;
+      }
+      .line {
+        height: 2px;
+        width: 35px;
+        margin: 0.5rem 0;
+        background: #daf8e3;
+        transition: transform 0.75s ease, opacity 0.75s ease;
+      }
+
+      @media screen and (max-width: 800px) {
+        .nav-links {
+          width: 60%;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        .burger {
+          display: block;
+        }
+        .nav-links {
+          position: fixed;
+          top: 8vh;
+          right: 0;
+          height: 92vh;
+          width: 50%;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          background: #005582;
+          transform: translateX(100%);
+          transition: transform 1s ease;
+          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+      }
+
+      @media screen and (max-width: 800px) {
+        .nav-links {
+          width: 60%;
+        }
+      }
+      .main-nav.show .line1 {
+        transform: translate(-10px) rotate(45deg) translate(15px);
+      }
+      .main-nav.show .line2 {
+        opacity: 0;
+      }
+      .main-nav.show .line3 {
+        transform: translate(-10px) rotate(-45deg) translate(15px);
+      }
+      .main-nav.show .nav-links {
+        transform: translateX(0%);
       }
     }
   }
 }
 
-header {
-  background-color: darkseagreen;
-  h1 {
-    font-size: 5vw;
-  }
-}
+// nav {
+//   background-color: rgb(245, 236, 236);
+//   height: 13.5vh;
+//   overflow: hidden;
+
+//   img {
+//     width: 80px;
+//   }
+//   ul {
+//     display: flex;
+//     margin: 30px;
+//     li {
+//       list-style-type: none;
+//       a {
+//         @include links;
+//         padding: 15px;
+//         display: block;
+//         color: #977e7e;
+//         text-align: center;
+//         text-decoration: none;
+//         &:hover {
+//           background-color: rgb(112, 125, 139);
+//         }
+//       }
+//     }
+//   }
+// }
