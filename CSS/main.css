@@ -50,7 +50,7 @@ body header .main-nav .nav-links a {
   color: black;
   text-decoration: none;
   font-family: "Caveat", cursive;
-  font-weight: 400;
+  font-weight: 600;
   padding: 15px;
   border-radius: 40px;
 }
@@ -125,5 +125,6 @@ body .text p {
 @media screen and (max-width: 800px) {
   body .text h1 {
     font-size: 6vw;
+    text-shadow: #585454 1px 1px 1px;
   }
 }/*# sourceMappingURL=main.css.map */
