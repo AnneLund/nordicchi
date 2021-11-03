@@ -46,7 +46,7 @@ body header .main-nav .nav-links {
   justify-content: space-around;
 }
 body header .main-nav .nav-links a {
-  font-size: 25px;
+  font-size: 30px;
   color: black;
   text-decoration: none;
   font-family: "Caveat", cursive;
@@ -55,7 +55,7 @@ body header .main-nav .nav-links a {
   border-radius: 40px;
 }
 body header .main-nav .nav-links a:hover {
-  background-color: #f5f3ef;
+  background-color: rgba(255, 255, 255, 0.185);
   transition: ease-in-out 1s;
 }
 body header .burger {
