@@ -31,6 +31,17 @@ $farve: #f5f3ef;
   font-weight: 200;
 }
 
+@mixin page-title {
+  font-size: 3vw;
+  font-family: "Caveat", cursive;
+  font-weight: 200;
+  padding-bottom: 20px;
+}
+
+@mixin p {
+  padding-bottom: 20px;
+}
+
 body {
   max-width: 1630px;
   header {
@@ -127,6 +138,21 @@ body {
   }
 
   .text {
-    height: 100vh;
+    background-color: $farve;
+    padding: 30px;
+    h1 {
+      @include page-title;
+    }
+
+    p {
+      @include p;
+    }
+
+    // MEDIAQUERIES
+    @media screen and (max-width: 800px) {
+      h1 {
+        font-size: 6vw;
+      }
+    }
   }
 }
