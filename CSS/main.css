@@ -18,11 +18,12 @@ body header {
 body header h1 {
   font-size: 7vw;
   font-family: "Caveat", cursive;
+  font-weight: 200;
   padding: 20px 10px;
 }
 body header .main-nav {
   display: flex;
-  height: 17vh;
+  height: 20vh;
   justify-content: space-between;
   align-items: center;
   color: #daf8e3;
@@ -30,10 +31,12 @@ body header .main-nav {
   overflow: hidden;
 }
 body header .main-nav .logo {
-  width: 120px;
+  width: 116px;
+  padding: 7px;
 }
 body header .main-nav .logo img {
   width: 100%;
+  border-radius: 70px;
 }
 body header .main-nav .nav-links {
   display: flex;
@@ -45,6 +48,7 @@ body header .main-nav .nav-links a {
   color: black;
   text-decoration: none;
   font-family: "Caveat", cursive;
+  font-weight: 400;
 }
 body header .burger {
   display: none;
@@ -97,7 +101,6 @@ body header .main-nav.show .nav-links {
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
   }
 }
-body header .text {
+body .text {
   height: 100vh;
-  background-color: #f5f3ef;
 }/*# sourceMappingURL=main.css.map */
