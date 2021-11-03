@@ -12,7 +12,7 @@
 
 // COLORMODS
 
-$links: rgba(133, 80, 80, 0.867);
+$softred: rgba(180, 110, 110, 0.747);
 $farve: #f5f3ef;
 
 // MIXINS
@@ -29,6 +29,8 @@ $farve: #f5f3ef;
   font-size: 7vw;
   font-family: "Caveat", cursive;
   font-weight: 200;
+  color: $softred;
+  text-shadow: grey 3px 3px 3px;
 }
 
 @mixin page-title {
