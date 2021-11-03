@@ -14,6 +14,7 @@
 
 $softred: rgba(180, 110, 110, 0.747);
 $farve: #f5f3ef;
+$red: rgb(182, 136, 119);
 
 // MIXINS
 
@@ -29,8 +30,8 @@ $farve: #f5f3ef;
   font-size: 7vw;
   font-family: "Caveat", cursive;
   font-weight: 200;
-  color: $softred;
-  text-shadow: grey 3px 3px 3px;
+  color: $red;
+  text-shadow: rgb(88, 84, 84) 3px 3px 3px;
 }
 
 @mixin page-title {
@@ -59,7 +60,7 @@ body {
       justify-content: space-between;
       align-items: center;
       color: #daf8e3;
-      background: rgb(182, 136, 119);
+      background: $red;
       overflow: hidden;
 
       .logo {
@@ -77,6 +78,11 @@ body {
 
         a {
           @include links;
+          padding: 15px;
+          &:hover {
+            background-color: $softred;
+            transition: ease-in-out 300ms;
+          }
         }
       }
     }

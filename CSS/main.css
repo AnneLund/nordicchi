@@ -19,8 +19,8 @@ body header h1 {
   font-size: 7vw;
   font-family: "Caveat", cursive;
   font-weight: 200;
-  color: rgba(180, 110, 110, 0.747);
-  text-shadow: grey 3px 3px 3px;
+  color: #b68877;
+  text-shadow: #585454 3px 3px 3px;
   padding: 20px 10px;
 }
 body header .main-nav {
@@ -51,6 +51,11 @@ body header .main-nav .nav-links a {
   text-decoration: none;
   font-family: "Caveat", cursive;
   font-weight: 400;
+  padding: 15px;
+}
+body header .main-nav .nav-links a:hover {
+  background-color: rgba(180, 110, 110, 0.747);
+  transition: ease-in-out 300ms;
 }
 body header .burger {
   display: none;
