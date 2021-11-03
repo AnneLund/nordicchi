@@ -18,7 +18,7 @@ $farve: #f5f3ef;
 // MIXINS
 
 @mixin links {
-  font-size: 22px;
+  font-size: 25px;
   color: black;
   text-decoration: none;
   font-family: "Caveat", cursive;
@@ -31,120 +31,93 @@ $farve: #f5f3ef;
 
 body {
   max-width: 1630px;
-
   header {
+    height: 10vw;
     background-color: $farve;
-
-    height: 18vh;
     h1 {
       @include title;
+      padding: 20px 10px;
     }
-    .main-nav {
-      display: flex;
-      height: 15vh;
-      justify-content: space-between;
-      align-items: center;
-      color: #daf8e3;
-      background: $links;
-      overflow: hidden;
+  }
+  .main-nav {
+    display: flex;
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    color: #daf8e3;
+    background: rgb(182, 136, 119);
+    overflow: hidden;
 
+    .logo {
       img {
-        width: 100px;
+        width: 95px;
       }
-      .nav-links {
-        display: flex;
-        width: 40%;
-        justify-content: space-around;
-        .logo {
-          padding: 0 2rem;
-        }
-        a {
-          @include links;
-        }
-      }
-      .burger {
-        display: none;
-        padding: 0.5rem;
-        cursor: pointer;
-      }
-      .line {
-        height: 2px;
-        width: 35px;
-        margin: 0.5rem 0;
-        background: #daf8e3;
-        transition: transform 0.75s ease, opacity 0.75s ease;
-      }
+    }
+    .nav-links {
+      display: flex;
+      width: 50%;
+      justify-content: space-around;
 
-      @media screen and (max-width: 800px) {
-        .nav-links {
-          width: 60%;
-        }
-      }
-      @media screen and (max-width: 600px) {
-        .burger {
-          display: block;
-        }
-        .nav-links {
-          position: fixed;
-          top: 8vh;
-          right: 0;
-          height: 92vh;
-          width: 50%;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-around;
-          background: #005582;
-          transform: translateX(100%);
-          transition: transform 1s ease;
-          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
-        }
-      }
-
-      @media screen and (max-width: 800px) {
-        .nav-links {
-          width: 60%;
-        }
-      }
-      .main-nav.show .line1 {
-        transform: translate(-10px) rotate(45deg) translate(15px);
-      }
-      .main-nav.show .line2 {
-        opacity: 0;
-      }
-      .main-nav.show .line3 {
-        transform: translate(-10px) rotate(-45deg) translate(15px);
-      }
-      .main-nav.show .nav-links {
-        transform: translateX(0%);
+      a {
+        @include links;
       }
     }
   }
+
+  .burger {
+    display: none;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  .line {
+    height: 2px;
+    width: 35px;
+    margin: 0.5rem 0;
+    background: #daf8e3;
+    transition: transform 0.75s ease, opacity 0.75s ease;
+  }
+
+  // MOBIL
+
+  .main-nav.show .line1 {
+    transform: translate(-10px) rotate(45deg) translate(15px);
+  }
+  .main-nav.show .line2 {
+    opacity: 0;
+  }
+  .main-nav.show .line3 {
+    transform: translate(-10px) rotate(-45deg) translate(15px);
+  }
+  .main-nav.show .nav-links {
+    transform: translateX(0%);
+  }
+  @media screen and (max-width: 800px) {
+    .nav-links {
+      width: 60%;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .burger {
+      display: block;
+    }
+
+    .nav-links {
+      position: fixed;
+      top: 8vh;
+      right: 0;
+      height: 92vh;
+      width: 50%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      background: rgb(182, 136, 119);
+      transform: translateX(100%);
+      transition: transform 1s ease;
+      box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+    }
+  }
+  .text {
+    height: 100vh;
+    background-color: $farve;
+  }
 }
-
-// nav {
-//   background-color: rgb(245, 236, 236);
-//   height: 13.5vh;
-//   overflow: hidden;
-
-//   img {
-//     width: 80px;
-//   }
-//   ul {
-//     display: flex;
-//     margin: 30px;
-//     li {
-//       list-style-type: none;
-//       a {
-//         @include links;
-//         padding: 15px;
-//         display: block;
-//         color: #977e7e;
-//         text-align: center;
-//         text-decoration: none;
-//         &:hover {
-//           background-color: rgb(112, 125, 139);
-//         }
-//       }
-//     }
-//   }
-// }
