@@ -9,13 +9,16 @@
   font-family: "Open Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
+html {
+  scroll-behavior: smooth;
+}
+html body {
   max-width: 1630px;
 }
-body header {
+html body .container {
   background-color: #f5f3ef;
 }
-body header h1 {
+html body .container header h1 {
   font-size: 7vw;
   font-family: "Caveat", cursive;
   font-weight: 200;
@@ -23,118 +26,139 @@ body header h1 {
   text-shadow: #585454 3px 3px 3px;
   padding: 20px 10px;
 }
-body header .main-nav {
-  display: flex;
-  height: 20vh;
-  justify-content: space-between;
-  align-items: center;
-  color: #daf8e3;
-  background: #b68877;
-  overflow: hidden;
-}
-body header .main-nav .logo {
-  width: 116px;
-  padding: 7px;
-}
-body header .main-nav .logo img {
-  width: 100%;
-  border-radius: 70px;
-}
-body header .main-nav .nav-links {
-  display: flex;
-  width: 70%;
-  justify-content: center;
-  gap: 6vw;
-}
-body header .main-nav .nav-links li {
-  padding: 0;
-}
-body header .main-nav .nav-links li a {
-  color: black;
-  text-decoration: none;
-  font-family: "Caveat", cursive;
-  font-weight: 600;
-  font-size: 30px;
-  border-radius: 40px;
-}
-body header .main-nav .nav-links li a:hover {
-  background-color: rgba(255, 255, 255, 0.185);
-  transition: ease-in-out 1s;
-}
-body header .burger {
-  display: none;
-  padding: 0.5rem;
-  cursor: pointer;
-}
-body header .line {
-  height: 2px;
-  width: 35px;
-  margin: 9px 10px;
-  background: #daf8e3;
-  transition: transform 0.75s ease, opacity 0.75s ease;
-}
-body header .main-nav.show .line1 {
-  transform: translate(-10px) rotate(45deg) translate(15px);
-}
-body header .main-nav.show .line2 {
-  opacity: 0;
-}
-body header .main-nav.show .line3 {
-  transform: translate(-10px) rotate(-45deg) translate(15px);
-}
-body header .main-nav.show .nav-links {
-  transform: translateX(0%);
-}
 @media screen and (max-width: 800px) {
-  body header .burger {
-    display: block;
-  }
-  body header h1 {
+  html body .container header h1 {
     font-size: 15vw;
   }
-  body header .nav-links {
-    position: fixed;
-    top: 38.5vh;
-    right: 0;
-    height: 60vh;
-    width: 60%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background: #b68877;
-    transform: translateX(100%);
-    transition: transform 1s ease;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
-  }
 }
-@media screen and (max-width: 400px) {
-  body header .nav-links {
-    position: fixed;
-    top: 24vh;
-    right: 0;
-    height: 60vh;
-    flex-direction: column;
-    justify-content: space-around;
-    transform: translateX(100%);
-    transition: transform 1s ease;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
-  }
+html body .container .col-3 {
+  background-color: #b68877;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* Style the button that is used to open and close the collapsible content */
 }
-body .text {
-  background-color: #f5f3ef;
-  padding: 30px;
+html body .container .col-3 .collapsible1 {
+  position: relative;
+  background: none;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
 }
-body .text h1 {
+html body .container .col-3 .collapsible1:hover {
+  background-color: rgba(255, 255, 255, 0.753);
+  transition: 1s;
+}
+html body .container .col-3 .collapsible1 h3 {
   font-size: 3vw;
   font-family: "Caveat", cursive;
   font-weight: 200;
   padding-bottom: 20px;
 }
-body .text p {
+html body .container .col-3 .collapsible1 .active {
+  background-color: #ccc;
+}
+html body .container .col-3 .content1 {
+  position: absolute;
+  left: 0;
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+html body .container .col-3 .collapsible2 {
+  position: relative;
+  background: none;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+html body .container .col-3 .collapsible2:hover {
+  background-color: rgba(255, 255, 255, 0.753);
+  transition: 1s;
+}
+html body .container .col-3 .collapsible2 h3 {
+  font-size: 3vw;
+  font-family: "Caveat", cursive;
+  font-weight: 200;
   padding-bottom: 20px;
 }
+html body .container .col-3 .collapsible2 .active {
+  background-color: #ccc;
+}
+html body .container .col-3 .content2 {
+  position: absolute;
+  left: 0;
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+html body .container .col-3 .collapsible3 {
+  position: relative;
+  background: none;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+html body .container .col-3 .collapsible3:hover {
+  background-color: rgba(255, 255, 255, 0.753);
+  transition: 1s;
+}
+html body .container .col-3 .collapsible3 h3 {
+  font-size: 3vw;
+  font-family: "Caveat", cursive;
+  font-weight: 200;
+  padding-bottom: 20px;
+}
+html body .container .col-3 .collapsible3 .active {
+  background-color: #ccc;
+}
+html body .container .col-3 .content3 {
+  position: absolute;
+  left: 0;
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+html body .container .col-3 p {
+  padding: 20px;
+}
 @media screen and (max-width: 800px) {
-  body .text h1 {
+  html body .container .col-3 {
+    display: block;
+    padding: 20px;
+  }
+  html body .container .col-3 .collapsible1 h3 {
+    font-size: 6vw;
+  }
+  html body .container .col-3 .collapsible2 h3 {
+    font-size: 6vw;
+  }
+  html body .container .col-3 .collapsible3 h3 {
+    font-size: 6vw;
+  }
+  html body .container .col-3 .content1 {
+    z-index: 1;
+  }
+  html body .container .col-3 .content2 {
+    z-index: 2;
+  }
+  html body .container .col-3 .content3 {
+    z-index: 3;
+  }
+}
+@media screen and (max-width: 800px) {
+  html body .container h1 {
     font-size: 6vw;
     text-shadow: #585454 1px 1px 1px;
   }
