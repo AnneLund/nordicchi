@@ -34,7 +34,7 @@ $red: rgb(182, 136, 119);
 }
 
 @mixin page-title {
-  font-size: 3vw;
+  font-size: 2.5vw;
   font-family: "Caveat", cursive;
   font-weight: 200;
   padding-bottom: 20px;
@@ -68,10 +68,10 @@ html {
         }
       }
 
-      .col-3 {
+      .col-4 {
         background-color: $red;
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto auto auto;
 
         /* Style the button that is used to open and close the collapsible content */
         .collapsible1 {
@@ -173,6 +173,30 @@ html {
           background-color: #f1f1f1;
         }
 
+        .collapsible4 {
+          position: relative;
+          background: none;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          outline: none;
+          font-size: 15px;
+
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.753);
+            transition: 1s;
+          }
+
+          h3 {
+            @include page-title;
+          }
+
+          .active {
+            background-color: #ccc;
+          }
+        }
+
         p {
           @include p;
         }
@@ -180,7 +204,7 @@ html {
       // MEDIAQUERIES
 
       @media screen and (max-width: 800px) {
-        .col-3 {
+        .col-4 {
           display: block;
           padding: 20px;
 
@@ -197,6 +221,12 @@ html {
           }
 
           .collapsible3 {
+            h3 {
+              font-size: 6vw;
+            }
+          }
+
+          .collapsible4 {
             h3 {
               font-size: 6vw;
             }
