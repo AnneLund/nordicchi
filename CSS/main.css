@@ -55,7 +55,7 @@ html body .container .col-4 .collapsible1 h3 {
   font-size: 2.5vw;
   font-family: "Caveat", cursive;
   font-weight: 200;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 html body .container .col-4 .collapsible1 .active {
   background-color: #ccc;
@@ -67,6 +67,17 @@ html body .container .col-4 .content1 {
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
+}
+html body .container .col-4 .content1 h3 {
+  font-size: 2.5vw;
+  font-family: "Caveat", cursive;
+  font-weight: 200;
+  padding: 20px;
+  text-align: center;
+  -webkit-text-decoration: underline solid 2px;
+          text-decoration: underline solid 2px;
+  -webkit-text-decoration-color: #b68877;
+          text-decoration-color: #b68877;
 }
 html body .container .col-4 .collapsible2 {
   position: relative;
@@ -86,7 +97,7 @@ html body .container .col-4 .collapsible2 h3 {
   font-size: 2.5vw;
   font-family: "Caveat", cursive;
   font-weight: 200;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 html body .container .col-4 .collapsible2 .active {
   background-color: #ccc;
@@ -98,6 +109,77 @@ html body .container .col-4 .content2 {
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
+}
+html body .container .col-4 .content2 h3 {
+  display: block;
+  font-size: 2.5vw;
+  font-family: "Caveat", cursive;
+  font-weight: 200;
+  padding: 20px;
+  text-align: center;
+  -webkit-text-decoration: underline solid 2px;
+          text-decoration: underline solid 2px;
+  -webkit-text-decoration-color: #b68877;
+          text-decoration-color: #b68877;
+  padding-bottom: 30px;
+  font-size: 50px;
+}
+html body .container .col-4 .content2 figure {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+html body .container .col-4 .content2 figure img {
+  width: 90%;
+}
+html body .container .col-4 .content2 figure figcaption h4 {
+  font-size: 2.5vw;
+  font-family: "Caveat", cursive;
+  font-weight: 200;
+  padding: 20px;
+  font-size: 30px;
+  padding-bottom: 0;
+}
+html body .container .col-4 .content2 .collapsible5 {
+  position: relative;
+  background: none;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+html body .container .col-4 .content2 .collapsible5:hover {
+  background-color: rgba(255, 255, 255, 0.753);
+  transition: 1s;
+}
+html body .container .col-4 .content2 .collapsible5 h3 {
+  font-size: 2.5vw;
+  font-family: "Caveat", cursive;
+  font-weight: 200;
+  padding: 20px;
+}
+html body .container .col-4 .content2 .collapsible5 .active {
+  background-color: #ccc;
+}
+html body .container .col-4 .content2 .content5 {
+  position: absolute;
+  left: 0;
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+html body .container .col-4 .content2 .content5 h3 {
+  font-size: 2.5vw;
+  font-family: "Caveat", cursive;
+  font-weight: 200;
+  padding: 20px;
+  text-align: center;
+  -webkit-text-decoration: underline solid 2px;
+          text-decoration: underline solid 2px;
+  -webkit-text-decoration-color: #b68877;
+          text-decoration-color: #b68877;
 }
 html body .container .col-4 .collapsible3 {
   position: relative;
@@ -117,7 +199,7 @@ html body .container .col-4 .collapsible3 h3 {
   font-size: 2.5vw;
   font-family: "Caveat", cursive;
   font-weight: 200;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 html body .container .col-4 .collapsible3 .active {
   background-color: #ccc;
@@ -129,6 +211,17 @@ html body .container .col-4 .content3 {
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
+}
+html body .container .col-4 .content3 h3 {
+  font-size: 2.5vw;
+  font-family: "Caveat", cursive;
+  font-weight: 200;
+  padding: 20px;
+  text-align: center;
+  -webkit-text-decoration: underline solid 2px;
+          text-decoration: underline solid 2px;
+  -webkit-text-decoration-color: #b68877;
+          text-decoration-color: #b68877;
 }
 html body .container .col-4 .collapsible4 {
   position: relative;
@@ -148,7 +241,7 @@ html body .container .col-4 .collapsible4 h3 {
   font-size: 2.5vw;
   font-family: "Caveat", cursive;
   font-weight: 200;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 html body .container .col-4 .collapsible4 .active {
   background-color: #ccc;
@@ -166,6 +259,25 @@ html body .container .col-4 p {
   }
   html body .container .col-4 .collapsible2 h3 {
     font-size: 6vw;
+  }
+  html body .container .col-4 .content2 {
+    justify-content: center;
+  }
+  html body .container .col-4 .content2 figure {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  html body .container .col-4 .content2 figure img {
+    width: 100%;
+  }
+  html body .container .col-4 .content2 figure figcaption h4 {
+    text-align: center;
+    font-size: 2.5vw;
+    font-family: "Caveat", cursive;
+    font-weight: 200;
+    padding: 20px;
+    font-size: 30px;
+    padding-bottom: 0;
   }
   html body .container .col-4 .collapsible3 h3 {
     font-size: 6vw;
