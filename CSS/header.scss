@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Open Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+// COLORMODS
+
+$softred: rgba(180, 110, 110, 0.747);
+$farve: #f5f3ef;
+$red: rgb(182, 136, 119);
+
+// MIXINS
+
+@mixin links {
+  color: black;
+  text-decoration: none;
+  font-family: "Caveat", cursive;
+  font-weight: 600;
+}
+
+@mixin title {
+  font-size: 7vw;
+  font-family: "Caveat", cursive;
+  font-weight: 200;
+  color: $red;
+  text-shadow: rgb(88, 84, 84) 3px 3px 3px;
+}
+
+@mixin page-title {
+  font-size: 2.5vw;
+  font-family: "Caveat", cursive;
+  font-weight: 200;
+  padding: 20px;
+}
+
+@mixin p {
+  padding: 20px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap");
+
+header {
+  // background-color: $farve;
+  h1 {
+    a {
+      @include title;
+      padding: 20px 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    h1 {
+      font-size: 15vw;
+    }
+  }
+}
+
+.col-4 {
+  background-color: $red;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+
+  /* Style the button that is used to open and close the collapsible content */
+  .collapsible {
+    position: relative;
+    background: none;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.753);
+      transition: 1s;
+    }
+
+    h3 {
+      @include page-title;
+    }
+
+    .active {
+      background-color: #ccc;
+    }
+  }
+
+  .content {
+    position: absolute;
+    left: 0;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+
+    h3 {
+      @include page-title;
+      text-align: center;
+      text-decoration: underline solid 2px;
+      text-decoration-color: $red;
+    }
+  }
+
+  .hvad-er-traumer {
+    position: relative;
+    background: none;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.753);
+      transition: 1s;
+    }
+
+    h3 {
+      @include page-title;
+    }
+
+    .active {
+      background-color: #ccc;
+    }
+  }
+
+  .collapsible {
+    position: relative;
+    background: none;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.753);
+      transition: 1s;
+    }
+
+    h3 {
+      @include page-title;
+    }
+
+    .active {
+      background-color: #ccc;
+    }
+  }
+  .content {
+    position: absolute;
+    left: 0;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+
+    h3 {
+      @include page-title;
+      text-align: center;
+      text-decoration: underline solid 2px;
+      text-decoration-color: $red;
+    }
+  }
+
+  .collapsible4 {
+    position: relative;
+    background: none;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.753);
+      transition: 1s;
+    }
+
+    h3 {
+      @include page-title;
+    }
+
+    .active {
+      background-color: #ccc;
+    }
+  }
+}
+
+// MEDIAQUERIES
+
+@media screen and (max-width: 800px) {
+  .col-4 {
+    display: block;
+    padding: 20px;
+
+    .collapsible1 {
+      h3 {
+        font-size: 6vw;
+      }
+    }
+
+    .collapsible3 {
+      h3 {
+        font-size: 6vw;
+      }
+    }
+
+    .collapsible4 {
+      h3 {
+        font-size: 6vw;
+      }
+    }
+
+    .content1 {
+      z-index: 1;
+    }
+    .content2 {
+      z-index: 2;
+    }
+    .content3 {
+      z-index: 3;
+    }
+  }
+}
+
+// @media screen and (max-width: 400px) {
+//   .collapsible1,
+//   .collapsible2,
+//   .collapsible3 {
+//     position: fixed;
+//     top: 24vh;
+//     right: 0;
+//     height: 60vh;
+//     flex-direction: column;
+//     justify-content: space-around;
+//     transform: translateX(100%);
+//     transition: transform 1s ease;
+//     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+//   }
+// }
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 6vw;
+    text-shadow: rgb(88, 84, 84) 1px 1px 1px;
+  }
+}
