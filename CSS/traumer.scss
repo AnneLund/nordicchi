@@ -68,6 +68,14 @@ html {
           @include page-title;
           text-align: center;
         }
+
+        @media screen and (max-width: 800px) {
+          h3 {
+            @include page-title;
+            text-align: center;
+            font-size: 5vw;
+          }
+        }
       }
 
       .text {
@@ -77,8 +85,8 @@ html {
             position: relative;
             background: none;
             cursor: pointer;
-            padding: 18px;
-            width: 25%;
+            padding: 10px;
+            width: 100%;
             border: none;
             outline: none;
             &:hover {
@@ -86,12 +94,32 @@ html {
               transition: 1s;
             }
 
+            &:after {
+              position: absolute;
+              top: 10%;
+              right: 25%;
+              content: "\002B";
+              color: rgb(107, 50, 50);
+              font-size: 30px;
+              font-weight: bold;
+              margin: 20px;
+            }
+
             h3 {
               @include subtitle;
             }
 
+            @media screen and (max-width: 800px) {
+              h3 {
+                font-size: 4vw;
+              }
+            }
+
             .active {
               background-color: #ccc;
+              &:after {
+                content: "\2212";
+              }
             }
           }
 
@@ -116,6 +144,16 @@ html {
                 }
               }
             }
+            @media screen and (max-width: 800px) {
+              figure {
+                display: grid;
+                grid-template-columns: auto;
+
+                figcaption {
+                  padding: 0;
+                }
+              }
+            }
           }
         }
 
@@ -126,14 +164,24 @@ html {
             background: none;
             cursor: pointer;
             padding: 18px;
-            width: 25%;
+            width: 100%;
             border: none;
             outline: none;
-            font-size: 15px;
 
             &:hover {
               background-color: rgb(255, 255, 255);
               transition: 1s;
+            }
+
+            &:after {
+              position: absolute;
+              top: 10%;
+              right: 25.4%;
+              content: "\002B";
+              color: rgb(107, 50, 50);
+              font-size: 40px;
+              font-weight: bold;
+              margin: 20px;
             }
 
             h3 {
@@ -141,10 +189,20 @@ html {
               text-align: center;
             }
 
+            @media screen and (max-width: 800px) {
+              h3 {
+                font-size: 4vw;
+              }
+            }
+
             .active {
               background-color: #ccc;
+              &:after {
+                content: "\2212";
+              }
             }
           }
+
           .content {
             padding: 0 18px;
             max-height: 0;

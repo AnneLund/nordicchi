@@ -57,7 +57,9 @@ header {
 @media screen and (max-width: 800px) {
   header {
     h1 {
-      font-size: 15vw;
+      a {
+        font-size: 15vw;
+      }
     }
   }
 }
@@ -67,7 +69,6 @@ header {
   display: grid;
   grid-template-columns: auto auto auto auto;
 
-  /* Style the button that is used to open and close the collapsible content */
   .collapsible {
     position: relative;
     background: none;
@@ -82,6 +83,14 @@ header {
       background-color: rgba(255, 255, 255, 0.753);
       transition: 1s;
     }
+
+    // &:after {
+    //   content: "\002B";
+    //   color: rgba(0, 0, 0, 0.651);
+    //   font-size: 30px;
+    //   font-weight: bold;
+    //   margin: 20px;
+    // }
 
     h3 {
       @include page-title;
@@ -173,7 +182,7 @@ header {
     }
   }
 
-  .collapsible4 {
+  .collapsible {
     position: relative;
     background: none;
     cursor: pointer;
@@ -205,55 +214,23 @@ header {
     display: block;
     padding: 20px;
 
-    .collapsible1 {
+    .collapsible {
       h3 {
-        font-size: 6vw;
+        font-size: 5vw;
       }
     }
 
-    .collapsible3 {
+    .hvad-er-traumer {
       h3 {
-        font-size: 6vw;
+        font-size: 5vw;
       }
     }
 
-    .collapsible4 {
-      h3 {
-        font-size: 6vw;
-      }
-    }
-
-    .content1 {
+    .content {
       z-index: 1;
+      h3 {
+        font-size: 5vw;
+      }
     }
-    .content2 {
-      z-index: 2;
-    }
-    .content3 {
-      z-index: 3;
-    }
-  }
-}
-
-// @media screen and (max-width: 400px) {
-//   .collapsible1,
-//   .collapsible2,
-//   .collapsible3 {
-//     position: fixed;
-//     top: 24vh;
-//     right: 0;
-//     height: 60vh;
-//     flex-direction: column;
-//     justify-content: space-around;
-//     transform: translateX(100%);
-//     transition: transform 1s ease;
-//     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
-//   }
-// }
-
-@media screen and (max-width: 800px) {
-  h1 {
-    font-size: 6vw;
-    text-shadow: rgb(88, 84, 84) 1px 1px 1px;
   }
 }

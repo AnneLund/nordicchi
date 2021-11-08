@@ -19,7 +19,7 @@ header h1 a {
 }
 
 @media screen and (max-width: 800px) {
-  header h1 {
+  header h1 a {
     font-size: 15vw;
   }
 }
@@ -27,7 +27,6 @@ header h1 a {
   background-color: #b68877;
   display: grid;
   grid-template-columns: auto auto auto auto;
-  /* Style the button that is used to open and close the collapsible content */
 }
 .col-4 .collapsible {
   position: relative;
@@ -138,7 +137,7 @@ header h1 a {
   -webkit-text-decoration-color: #b68877;
           text-decoration-color: #b68877;
 }
-.col-4 .collapsible4 {
+.col-4 .collapsible {
   position: relative;
   background: none;
   cursor: pointer;
@@ -148,17 +147,17 @@ header h1 a {
   outline: none;
   font-size: 15px;
 }
-.col-4 .collapsible4:hover {
+.col-4 .collapsible:hover {
   background-color: rgba(255, 255, 255, 0.753);
   transition: 1s;
 }
-.col-4 .collapsible4 h3 {
+.col-4 .collapsible h3 {
   font-size: 2.5vw;
   font-family: "Caveat", cursive;
   font-weight: 200;
   padding: 20px;
 }
-.col-4 .collapsible4 .active {
+.col-4 .collapsible .active {
   background-color: #ccc;
 }
 
@@ -167,28 +166,16 @@ header h1 a {
     display: block;
     padding: 20px;
   }
-  .col-4 .collapsible1 h3 {
-    font-size: 6vw;
+  .col-4 .collapsible h3 {
+    font-size: 5vw;
   }
-  .col-4 .collapsible3 h3 {
-    font-size: 6vw;
+  .col-4 .hvad-er-traumer h3 {
+    font-size: 5vw;
   }
-  .col-4 .collapsible4 h3 {
-    font-size: 6vw;
-  }
-  .col-4 .content1 {
+  .col-4 .content {
     z-index: 1;
   }
-  .col-4 .content2 {
-    z-index: 2;
-  }
-  .col-4 .content3 {
-    z-index: 3;
-  }
-}
-@media screen and (max-width: 800px) {
-  h1 {
-    font-size: 6vw;
-    text-shadow: #585454 1px 1px 1px;
+  .col-4 .content h3 {
+    font-size: 5vw;
   }
 }/*# sourceMappingURL=header.css.map */
