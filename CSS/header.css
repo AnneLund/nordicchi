@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,13 +11,12 @@
 
 body {
   position: relative;
+  background-color: #f5f3ef;
 }
 body header h1 a {
   font-size: 7vw;
-  font-family: "Caveat", cursive;
+  font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
-  color: #b68877;
-  text-shadow: #585454 3px 3px 3px;
   padding: 20px 10px;
 }
 @media screen and (max-width: 800px) {
@@ -26,7 +25,7 @@ body header h1 a {
   }
 }
 body .col-4 {
-  background-color: #b68877;
+  background-color: rgba(0, 0, 0, 0.048);
   display: grid;
   grid-template-columns: auto auto auto auto;
 }
@@ -45,7 +44,7 @@ body .col-4 .collapsible:hover {
 }
 body .col-4 .collapsible h3 {
   font-size: 2.5vw;
-  font-family: "Caveat", cursive;
+  font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
 }
@@ -69,14 +68,12 @@ body .col-4 .content .text {
 }
 body .col-4 .content .text h3 {
   font-size: 2.5vw;
-  font-family: "Caveat", cursive;
+  font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
   text-align: center;
   -webkit-text-decoration: underline solid 2px;
           text-decoration: underline solid 2px;
-  -webkit-text-decoration-color: #b68877;
-          text-decoration-color: #b68877;
 }
 body .col-4 .content .text p {
   padding: 10px;
@@ -105,7 +102,7 @@ body .col-4 .hvad-er-traumer:hover {
 }
 body .col-4 .hvad-er-traumer h3 {
   font-size: 2.5vw;
-  font-family: "Caveat", cursive;
+  font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
 }
@@ -128,7 +125,7 @@ body .col-4 .collapsible:hover {
 }
 body .col-4 .collapsible h3 {
   font-size: 2.5vw;
-  font-family: "Caveat", cursive;
+  font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
 }
@@ -146,14 +143,12 @@ body .col-4 .content {
 }
 body .col-4 .content h3 {
   font-size: 2.5vw;
-  font-family: "Caveat", cursive;
+  font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
   text-align: center;
   -webkit-text-decoration: underline solid 2px;
           text-decoration: underline solid 2px;
-  -webkit-text-decoration-color: #b68877;
-          text-decoration-color: #b68877;
 }
 body .col-4 .collapsible {
   position: relative;
@@ -171,7 +166,7 @@ body .col-4 .collapsible:hover {
 }
 body .col-4 .collapsible h3 {
   font-size: 2.5vw;
-  font-family: "Caveat", cursive;
+  font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
 }

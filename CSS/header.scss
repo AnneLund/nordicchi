@@ -8,44 +8,50 @@
   font-family: "Open Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300&display=swap");
+
 // COLORMODS
 
-$softred: rgba(180, 110, 110, 0.747);
-$farve: #f5f3ef;
-$red: rgb(182, 136, 119);
+$baggrund: #f5f3ef;
+$baggrund2: rgba(0, 0, 0, 0.048);
 
 // MIXINS
 
 @mixin links {
   color: black;
   text-decoration: none;
-  font-family: "Caveat", cursive;
-  font-weight: 600;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
 }
 
 @mixin title {
   font-size: 7vw;
-  font-family: "Caveat", cursive;
+  font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
-  color: $red;
-  text-shadow: rgb(88, 84, 84) 3px 3px 3px;
 }
 
 @mixin page-title {
   font-size: 2.5vw;
-  font-family: "Caveat", cursive;
+  font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
+}
+
+@mixin subtitle {
+  font-size: 2vw;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
+  padding: 20px;
+  text-decoration: underline 1px;
 }
 
 @mixin p {
   padding: 20px;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap");
-
 body {
   position: relative;
+  background-color: $baggrund;
 
   header {
     // background-color: $farve;
@@ -68,7 +74,7 @@ body {
   }
 
   .col-4 {
-    background-color: $red;
+    background-color: $baggrund2;
     display: grid;
     grid-template-columns: auto auto auto auto;
 
@@ -115,7 +121,6 @@ body {
           @include page-title;
           text-align: center;
           text-decoration: underline solid 2px;
-          text-decoration-color: $red;
         }
 
         p {
@@ -193,7 +198,6 @@ body {
         @include page-title;
         text-align: center;
         text-decoration: underline solid 2px;
-        text-decoration-color: $red;
       }
     }
 

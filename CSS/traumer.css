@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,31 +16,18 @@ html {
 html body {
   max-width: 1630px;
 }
-html body .container {
-  background-color: #f5f3ef;
-}
-html body .container .title {
-  background-color: #b68877;
-}
 html body .container .title h3 {
   font-size: 2.5vw;
-  font-family: "Caveat", cursive;
+  font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
+  background-color: rgba(102, 102, 102, 0.178);
   text-align: center;
 }
 @media screen and (max-width: 800px) {
   html body .container .title h3 {
-    font-size: 2.5vw;
-    font-family: "Caveat", cursive;
-    font-weight: 200;
-    padding: 20px;
-    text-align: center;
     font-size: 5vw;
   }
-}
-html body .container .text {
-  background-color: #f5f3ef;
 }
 html body .container .text .button-five .collapsible {
   position: relative;
@@ -56,74 +43,75 @@ html body .container .text .button-five .collapsible:hover {
   transition: 1s;
 }
 html body .container .text .button-five .collapsible:after {
-  position: absolute;
-  top: 10%;
-  right: 25%;
   content: "+";
-  color: #6b3232;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
   margin: 20px;
 }
 html body .container .text .button-five .collapsible h3 {
   font-size: 2vw;
-  font-family: "Caveat", cursive;
+  font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
-  color: #743333;
   padding: 20px;
   -webkit-text-decoration: underline 1px;
           text-decoration: underline 1px;
 }
 @media screen and (max-width: 800px) {
+  html body .container .text .button-five .collapsible:after {
+    font-size: 35px;
+    font-weight: lighter;
+    margin: 0;
+  }
   html body .container .text .button-five .collapsible h3 {
     font-size: 4vw;
   }
 }
-html body .container .text .button-five .collapsible .active {
+html body .container .text .button-five .active {
   background-color: #ccc;
 }
-html body .container .text .button-five .collapsible .active:after {
+html body .container .text .button-five .active:after {
   content: "−";
 }
-html body .container .text .button-five .content {
+html body .container .text .content {
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
 }
-html body .container .text .button-five .content figure {
+html body .container .text .content figure {
   display: grid;
   grid-template-columns: auto auto;
 }
-html body .container .text .button-five .content figure img {
+html body .container .text .content figure img {
   width: 90%;
 }
-html body .container .text .button-five .content figure figcaption {
+html body .container .text .content figure figcaption {
   padding: 70px;
 }
-html body .container .text .button-five .content figure figcaption h4 {
+html body .container .text .content figure figcaption h4 {
   font-size: 2.5vw;
-  font-family: "Caveat", cursive;
+  font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
+  background-color: rgba(102, 102, 102, 0.178);
   font-size: 30px;
   padding: 0 0 20px 0;
 }
 @media screen and (max-width: 800px) {
-  html body .container .text .button-five .content figure {
+  html body .container .text .content figure {
     display: grid;
     grid-template-columns: auto;
   }
-  html body .container .text .button-five .content figure figcaption {
+  html body .container .text .content figure figcaption {
     padding: 0;
   }
 }
-html body .container .text .collapsible {
+html body .container .collapsible {
   color: black;
   text-decoration: none;
-  font-family: "Caveat", cursive;
-  font-weight: 600;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
   position: relative;
   background: none;
   cursor: pointer;
@@ -132,72 +120,122 @@ html body .container .text .collapsible {
   border: none;
   outline: none;
 }
-html body .container .text .collapsible:hover {
+html body .container .collapsible:hover {
   background-color: white;
   transition: 1s;
 }
-html body .container .text .collapsible:after {
-  position: absolute;
-  top: 10%;
-  right: 25.4%;
+html body .container .collapsible:after {
   content: "+";
-  color: #6b3232;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bold;
   margin: 20px;
 }
-html body .container .text .collapsible h3 {
+html body .container .collapsible h3 {
   font-size: 2vw;
-  font-family: "Caveat", cursive;
+  font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
-  color: #743333;
   padding: 20px;
   -webkit-text-decoration: underline 1px;
           text-decoration: underline 1px;
   text-align: center;
 }
 @media screen and (max-width: 800px) {
-  html body .container .text .collapsible h3 {
+  html body .container .collapsible:after {
+    font-size: 35px;
+    font-weight: lighter;
+    margin: 0;
+  }
+  html body .container .collapsible h3 {
     font-size: 4vw;
   }
 }
-html body .container .text .collapsible .active {
+html body .container .collapsible .active {
   background-color: #ccc;
 }
-html body .container .text .collapsible .active:after {
+html body .container .collapsible .active:after {
   content: "−";
 }
-html body .container .text .content {
+html body .container .content {
   width: 100%;
   padding: 0 18px;
   max-height: 0;
-  height: 70vh;
+  height: 100vh;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+  background-color: #f5f3ef;
 }
-html body .container .text .content h3 {
+html body .container .content h3 {
   font-size: 2.5vw;
-  font-family: "Caveat", cursive;
+  font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
+  background-color: rgba(102, 102, 102, 0.178);
   text-align: center;
   -webkit-text-decoration: underline solid 2px;
           text-decoration: underline solid 2px;
-  -webkit-text-decoration-color: #b68877;
-          text-decoration-color: #b68877;
 }
-html body .container .text .content h4 {
+html body .container .content h4 {
   font-weight: 400;
   font-size: 20px;
   text-align: center;
   padding: 20px;
 }
-html body .container .text .content ul {
-  text-align: left;
+html body .container .content ul {
+  max-height: 80vh;
 }
-html body .container .text .content .item-one {
-  text-align: left;
+html body .container .content ul li .traume-collapsible {
+  color: black;
+  text-decoration: none;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
+  font-size: 1.5vw;
+  position: relative;
+  background: none;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+html body .container .content ul li .traume-collapsible:hover {
+  background-color: rgba(255, 255, 255, 0.753);
+  transition: 1s;
+}
+html body .container .content ul li .traume-collapsible h3 {
+  font-size: 2.5vw;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
+  padding: 20px;
+  background-color: rgba(102, 102, 102, 0.178);
+}
+html body .container .content ul li .traume-collapsible .active {
+  background-color: #ccc;
+}
+@media screen and (max-width: 800px) {
+  html body .container .content ul li .traume-collapsible {
+    font-size: 4vw;
+  }
+}
+html body .container .content ul li .content {
+  position: absolute;
+  left: 0;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+html body .container .content ul li .content h3 {
+  font-size: 2.5vw;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
+  padding: 20px;
+  background-color: rgba(102, 102, 102, 0.178);
+  text-align: center;
+  -webkit-text-decoration: underline solid 2px;
+          text-decoration: underline solid 2px;
+}
+html body .container .content .item-one {
   width: 400px;
   height: 50px;
   position: relative;
@@ -214,26 +252,39 @@ html body .container .text .content .item-one {
 }
 @-webkit-keyframes item-one {
   0% {
-    left: 0;
-    top: 0;
+    left: 0%;
   }
   100% {
     left: 38%;
-    top: 0;
   }
 }
 @keyframes item-one {
   0% {
-    left: 0;
-    top: 0;
+    left: 0%;
   }
   100% {
     left: 38%;
-    top: 0;
   }
 }
-html body .container .text .content .item-two {
-  text-align: left;
+@media screen and (max-width: 800px) {
+  @-webkit-keyframes item-one {
+    0% {
+      display: none;
+    }
+    100% {
+      display: none;
+    }
+  }
+  @keyframes item-one {
+    0% {
+      display: none;
+    }
+    100% {
+      display: none;
+    }
+  }
+}
+html body .container .content .item-two {
   width: 400px;
   height: 50px;
   position: relative;
@@ -268,8 +319,25 @@ html body .container .text .content .item-two {
     top: 0;
   }
 }
-html body .container .text .content .item-three {
-  text-align: left;
+@media screen and (max-width: 800px) {
+  @-webkit-keyframes item-two {
+    0% {
+      display: none;
+    }
+    100% {
+      display: none;
+    }
+  }
+  @keyframes item-two {
+    0% {
+      display: none;
+    }
+    100% {
+      display: none;
+    }
+  }
+}
+html body .container .content .item-three {
   width: 400px;
   height: 50px;
   position: relative;
@@ -304,7 +372,25 @@ html body .container .text .content .item-three {
     top: 0;
   }
 }
-html body .container .text .content .item-four {
+@media screen and (max-width: 800px) {
+  @-webkit-keyframes item-three {
+    0% {
+      display: none;
+    }
+    100% {
+      display: none;
+    }
+  }
+  @keyframes item-three {
+    0% {
+      display: none;
+    }
+    100% {
+      display: none;
+    }
+  }
+}
+html body .container .content .item-four {
   width: 400px;
   height: 50px;
   position: relative;
@@ -339,51 +425,21 @@ html body .container .text .content .item-four {
     top: 0;
   }
 }
-html body .container .text .content .traume-collapsible {
-  color: black;
-  text-decoration: none;
-  font-family: "Caveat", cursive;
-  font-weight: 600;
-  font-size: 1.5vw;
-  background-color: lightcoral;
-  position: relative;
-  background: none;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  outline: none;
-}
-html body .container .text .content .traume-collapsible:hover {
-  background-color: rgba(255, 255, 255, 0.753);
-  transition: 1s;
-}
-html body .container .text .content .traume-collapsible h3 {
-  font-size: 2.5vw;
-  font-family: "Caveat", cursive;
-  font-weight: 200;
-  padding: 20px;
-}
-html body .container .text .content .traume-collapsible .active {
-  background-color: #ccc;
-}
-html body .container .text .content .content {
-  position: absolute;
-  left: 0;
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-}
-html body .container .text .content .content h3 {
-  font-size: 2.5vw;
-  font-family: "Caveat", cursive;
-  font-weight: 200;
-  padding: 20px;
-  text-align: center;
-  -webkit-text-decoration: underline solid 2px;
-          text-decoration: underline solid 2px;
-  -webkit-text-decoration-color: #b68877;
-          text-decoration-color: #b68877;
+@media screen and (max-width: 800px) {
+  @-webkit-keyframes item-four {
+    0% {
+      display: none;
+    }
+    100% {
+      display: none;
+    }
+  }
+  @keyframes item-four {
+    0% {
+      display: none;
+    }
+    100% {
+      display: none;
+    }
+  }
 }/*# sourceMappingURL=traumer.css.map */

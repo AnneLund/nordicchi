@@ -8,43 +8,40 @@
   font-family: "Open Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300&display=swap");
 
 // COLORMODS
 
-$softred: rgba(180, 110, 110, 0.747);
-$farve: #f5f3ef;
-$red: rgb(182, 136, 119);
+$baggrund: #f5f3ef;
+$baggrund2: rgba(102, 102, 102, 0.178);
 
 // MIXINS
 
 @mixin links {
   color: black;
   text-decoration: none;
-  font-family: "Caveat", cursive;
-  font-weight: 600;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
 }
 
 @mixin title {
   font-size: 7vw;
-  font-family: "Caveat", cursive;
+  font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
-  color: $red;
-  text-shadow: rgb(88, 84, 84) 3px 3px 3px;
 }
 
 @mixin page-title {
   font-size: 2.5vw;
-  font-family: "Caveat", cursive;
+  font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
+  background-color: $baggrund2;
 }
 
 @mixin subtitle {
   font-size: 2vw;
-  font-family: "Caveat", cursive;
+  font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
-  color: rgb(116, 51, 51);
   padding: 20px;
   text-decoration: underline 1px;
 }
@@ -60,10 +57,10 @@ html {
     max-width: 1630px;
 
     .container {
-      background-color: $farve;
+      header {
+      }
 
       .title {
-        background-color: $red;
         h3 {
           @include page-title;
           text-align: center;
@@ -71,15 +68,12 @@ html {
 
         @media screen and (max-width: 800px) {
           h3 {
-            @include page-title;
-            text-align: center;
             font-size: 5vw;
           }
         }
       }
 
       .text {
-        background-color: $farve;
         .button-five {
           .collapsible {
             position: relative;
@@ -95,12 +89,11 @@ html {
             }
 
             &:after {
-              position: absolute;
-              top: 10%;
-              right: 25%;
+              // position: absolute;
+              // top: 10%;
+              // right: 25%;
               content: "\002B";
-              color: rgb(107, 50, 50);
-              font-size: 30px;
+              font-size: 35px;
               font-weight: bold;
               margin: 20px;
             }
@@ -110,87 +103,15 @@ html {
             }
 
             @media screen and (max-width: 800px) {
+              &:after {
+                font-size: 35px;
+                font-weight: lighter;
+                margin: 0;
+              }
+
               h3 {
                 font-size: 4vw;
               }
-            }
-
-            .active {
-              background-color: #ccc;
-              &:after {
-                content: "\2212";
-              }
-            }
-          }
-
-          .content {
-            padding: 0 18px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.2s ease-out;
-            background-color: #f1f1f1;
-            figure {
-              display: grid;
-              grid-template-columns: auto auto;
-              img {
-                width: 90%;
-              }
-              figcaption {
-                padding: 70px;
-                h4 {
-                  @include page-title;
-                  font-size: 30px;
-                  padding: 0 0 20px 0;
-                }
-              }
-            }
-            @media screen and (max-width: 800px) {
-              figure {
-                display: grid;
-                grid-template-columns: auto;
-
-                figcaption {
-                  padding: 0;
-                }
-              }
-            }
-          }
-        }
-
-        .collapsible {
-          @include links;
-          position: relative;
-          background: none;
-          cursor: pointer;
-          padding: 18px;
-          width: 100%;
-          border: none;
-          outline: none;
-
-          &:hover {
-            background-color: rgb(255, 255, 255);
-            transition: 1s;
-          }
-
-          &:after {
-            position: absolute;
-            top: 10%;
-            right: 25.4%;
-            content: "\002B";
-            color: rgb(107, 50, 50);
-            font-size: 40px;
-            font-weight: bold;
-            margin: 20px;
-          }
-
-          h3 {
-            @include subtitle;
-            text-align: center;
-          }
-
-          @media screen and (max-width: 800px) {
-            h3 {
-              font-size: 4vw;
             }
           }
 
@@ -203,164 +124,291 @@ html {
         }
 
         .content {
-          width: 100%;
           padding: 0 18px;
           max-height: 0;
-          height: 70vh;
           overflow: hidden;
           transition: max-height 0.2s ease-out;
           background-color: #f1f1f1;
+          figure {
+            display: grid;
+            grid-template-columns: auto auto;
+            img {
+              width: 90%;
+            }
+            figcaption {
+              padding: 70px;
+              h4 {
+                @include page-title;
+                font-size: 30px;
+                padding: 0 0 20px 0;
+              }
+            }
+          }
+          @media screen and (max-width: 800px) {
+            figure {
+              display: grid;
+              grid-template-columns: auto;
+
+              figcaption {
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+
+      .collapsible {
+        @include links;
+        position: relative;
+        background: none;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        outline: none;
+
+        &:hover {
+          background-color: rgb(255, 255, 255);
+          transition: 1s;
+        }
+
+        &:after {
+          // position: absolute;
+          // top: 10%;
+          // right: 25.4%;
+          content: "\002B";
+          font-size: 35px;
+          font-weight: bold;
+          margin: 20px;
+        }
+
+        h3 {
+          @include subtitle;
+          text-align: center;
+        }
+
+        @media screen and (max-width: 800px) {
+          &:after {
+            font-size: 35px;
+            font-weight: lighter;
+            margin: 0;
+          }
 
           h3 {
-            @include page-title;
-            text-align: center;
-            text-decoration: underline solid 2px;
-            text-decoration-color: $red;
+            font-size: 4vw;
           }
+        }
 
-          h4 {
-            font-weight: 400;
-            font-size: 20px;
-            text-align: center;
-            padding: 20px;
+        .active {
+          background-color: #ccc;
+          &:after {
+            content: "\2212";
           }
+        }
+      }
 
-          ul {
-            text-align: left;
+      .content {
+        width: 100%;
+        padding: 0 18px;
+        max-height: 0;
+        height: 100vh;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: $baggrund;
+
+        h3 {
+          @include page-title;
+          text-align: center;
+          text-decoration: underline solid 2px;
+        }
+
+        h4 {
+          font-weight: 400;
+          font-size: 20px;
+          text-align: center;
+          padding: 20px;
+        }
+
+        ul {
+          max-height: 80vh;
+          li {
+            .traume-collapsible {
+              @include links;
+              font-size: 1.5vw;
+              position: relative;
+              background: none;
+              cursor: pointer;
+              padding: 18px;
+              width: 100%;
+              border: none;
+              outline: none;
+
+              &:hover {
+                background-color: rgba(255, 255, 255, 0.753);
+                transition: 1s;
+              }
+
+              h3 {
+                @include page-title;
+              }
+
+              .active {
+                background-color: #ccc;
+              }
+            }
+
+            @media screen and (max-width: 800px) {
+              .traume-collapsible {
+                font-size: 4vw;
+              }
+            }
+            .content {
+              position: absolute;
+              left: 0;
+              padding: 0 18px;
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.2s ease-out;
+              background-color: #f1f1f1;
+
+              h3 {
+                @include page-title;
+                text-align: center;
+                text-decoration: underline solid 2px;
+              }
+            }
           }
+        }
+        .item-one {
+          width: 400px;
+          height: 50px;
+          position: relative;
+          animation-name: item-one;
+          animation-duration: 3s;
+          animation-delay: 4s;
+          animation-direction: normal;
+          animation-fill-mode: forwards;
 
-          .item-one {
-            text-align: left;
-            width: 400px;
-            height: 50px;
-            position: relative;
-            animation-name: item-one;
-            animation-duration: 3s;
-            animation-delay: 4s;
-            animation-direction: normal;
-            animation-fill-mode: forwards;
+          @keyframes item-one {
+            0% {
+              left: 0%;
+            }
+
+            100% {
+              left: 38%;
+            }
+          }
+          @media screen and(max-width: 800px) {
             @keyframes item-one {
               0% {
-                left: 0;
-                top: 0;
+                display: none;
               }
 
               100% {
-                left: 38%;
-                top: 0;
+                display: none;
               }
             }
           }
+        }
 
-          .item-two {
-            text-align: left;
-            width: 400px;
-            height: 50px;
-            position: relative;
-            animation-name: item-two;
-            animation-delay: 5s;
-            animation-duration: 3s;
-            animation-direction: normal;
-            animation-fill-mode: forwards;
+        .item-two {
+          width: 400px;
+          height: 50px;
+          position: relative;
+          animation-name: item-two;
+          animation-delay: 5s;
+          animation-duration: 3s;
+          animation-direction: normal;
+          animation-fill-mode: forwards;
 
+          @keyframes item-two {
+            0% {
+              left: 0px;
+              top: 0px;
+            }
+
+            100% {
+              left: 38%;
+              top: 0;
+            }
+          }
+          @media screen and(max-width: 800px) {
             @keyframes item-two {
               0% {
-                left: 0px;
-                top: 0px;
+                display: none;
               }
 
               100% {
-                left: 38%;
-                top: 0;
+                display: none;
               }
             }
           }
+        }
 
-          .item-three {
-            text-align: left;
-            width: 400px;
-            height: 50px;
-            position: relative;
-            animation-name: item-three;
-            animation-duration: 3s;
-            animation-delay: 6s;
-            animation-direction: normal;
-            animation-fill-mode: forwards;
+        .item-three {
+          width: 400px;
+          height: 50px;
+          position: relative;
+          animation-name: item-three;
+          animation-duration: 3s;
+          animation-delay: 6s;
+          animation-direction: normal;
+          animation-fill-mode: forwards;
 
+          @keyframes item-three {
+            0% {
+              left: 0px;
+              top: 0px;
+            }
+
+            100% {
+              left: 38%;
+              top: 0;
+            }
+          }
+          @media screen and(max-width: 800px) {
             @keyframes item-three {
               0% {
-                left: 0px;
-                top: 0px;
+                display: none;
               }
 
               100% {
-                left: 38%;
-                top: 0;
+                display: none;
               }
             }
           }
+        }
 
-          .item-four {
-            width: 400px;
-            height: 50px;
-            position: relative;
-            animation-name: item-four;
-            animation-duration: 3s;
-            animation-delay: 7s;
-            animation-direction: normal;
-            animation-fill-mode: forwards;
+        .item-four {
+          width: 400px;
+          height: 50px;
+          position: relative;
+          animation-name: item-four;
+          animation-duration: 3s;
+          animation-delay: 7s;
+          animation-direction: normal;
+          animation-fill-mode: forwards;
 
+          @keyframes item-four {
+            0% {
+              left: 0px;
+              top: 0px;
+            }
+
+            100% {
+              left: 38%;
+              top: 0;
+            }
+          }
+          @media screen and(max-width: 800px) {
             @keyframes item-four {
               0% {
-                left: 0px;
-                top: 0px;
+                display: none;
               }
 
               100% {
-                left: 38%;
-                top: 0;
+                display: none;
               }
-            }
-          }
-          .traume-collapsible {
-            @include links;
-            font-size: 1.5vw;
-            background-color: lightcoral;
-            position: relative;
-            background: none;
-            cursor: pointer;
-            padding: 18px;
-            width: 100%;
-            border: none;
-            outline: none;
-
-            &:hover {
-              background-color: rgba(255, 255, 255, 0.753);
-              transition: 1s;
-            }
-
-            h3 {
-              @include page-title;
-            }
-
-            .active {
-              background-color: #ccc;
-            }
-          }
-          .content {
-            position: absolute;
-            left: 0;
-            padding: 0 18px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.2s ease-out;
-            background-color: #f1f1f1;
-
-            h3 {
-              @include page-title;
-              text-align: center;
-              text-decoration: underline solid 2px;
-              text-decoration-color: $red;
             }
           }
         }
