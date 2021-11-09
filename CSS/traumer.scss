@@ -57,9 +57,6 @@ html {
     max-width: 1630px;
 
     .container {
-      header {
-      }
-
       .title {
         h3 {
           @include page-title;
@@ -73,53 +70,55 @@ html {
         }
       }
 
-      .text {
-        .button-five {
-          .collapsible {
-            position: relative;
-            background: none;
-            cursor: pointer;
-            padding: 10px;
-            width: 100%;
-            border: none;
-            outline: none;
-            &:hover {
-              background-color: rgb(255, 255, 255);
-              transition: 1s;
-            }
+      // TRAUMER-KNAP //
 
+      .button-five {
+        .collapsible {
+          position: relative;
+          background: none;
+          cursor: pointer;
+          padding: 10px;
+          width: 100%;
+          border: none;
+          outline: none;
+          &:hover {
+            background-color: rgb(255, 255, 255);
+            transition: 1s;
+          }
+
+          &:after {
+            // position: absolute;
+            // top: 10%;
+            // right: 25%;
+            content: "\002B";
+            font-size: 35px;
+            font-weight: bold;
+            margin: 20px;
+          }
+
+          @media screen and (max-width: 800px) {
             &:after {
-              // position: absolute;
-              // top: 10%;
-              // right: 25%;
-              content: "\002B";
-              font-size: 35px;
-              font-weight: bold;
-              margin: 20px;
-            }
-
-            h3 {
-              @include subtitle;
-            }
-
-            @media screen and (max-width: 800px) {
-              &:after {
-                font-size: 35px;
-                font-weight: lighter;
-                margin: 0;
-              }
-
-              h3 {
-                font-size: 4vw;
-              }
+              font-size: 20px;
+              font-weight: lighter;
+              margin: 0;
             }
           }
 
-          .active {
-            background-color: #ccc;
-            &:after {
-              content: "\2212";
+          h3 {
+            @include subtitle;
+          }
+
+          @media screen and (max-width: 800px) {
+            h3 {
+              font-size: 4vw;
             }
+          }
+        }
+
+        .active {
+          background-color: #ccc;
+          &:after {
+            content: "\2212";
           }
         }
 
@@ -157,45 +156,50 @@ html {
         }
       }
 
-      .collapsible {
-        @include links;
-        position: relative;
-        background: none;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        outline: none;
+      // SYMPTOMER PÅ TRAUMER-KNAP //
 
-        &:hover {
-          background-color: rgb(255, 255, 255);
-          transition: 1s;
-        }
+      .button-six {
+        .collapsible {
+          @include links;
+          position: relative;
+          background: none;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          outline: none;
 
-        &:after {
-          // position: absolute;
-          // top: 10%;
-          // right: 25.4%;
-          content: "\002B";
-          font-size: 35px;
-          font-weight: bold;
-          margin: 20px;
-        }
+          &:hover {
+            background-color: rgb(255, 255, 255);
+            transition: 1s;
+          }
 
-        h3 {
-          @include subtitle;
-          text-align: center;
-        }
-
-        @media screen and (max-width: 800px) {
           &:after {
+            // position: absolute;
+            // top: 10%;
+            // right: 25.4%;
+            content: "\002B";
             font-size: 35px;
-            font-weight: lighter;
-            margin: 0;
+            font-weight: bold;
+            margin: 20px;
+          }
+
+          @media screen and (max-width: 800px) {
+            &:after {
+              font-size: 20px;
+              font-weight: lighter;
+              margin: 0;
+            }
           }
 
           h3 {
-            font-size: 4vw;
+            @include subtitle;
+            text-align: center;
+          }
+          @media screen and (max-width: 800px) {
+            h3 {
+              font-size: 4vw;
+            }
           }
         }
 
@@ -205,210 +209,79 @@ html {
             content: "\2212";
           }
         }
-      }
 
-      .content {
-        width: 100%;
-        padding: 0 18px;
-        max-height: 0;
-        height: 100vh;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-        background-color: $baggrund;
+        .content {
+          width: 100%;
+          padding: 18px 0;
+          max-height: 0;
+          // background-color: $baggrund2;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+          z-index: 5;
 
-        h3 {
-          @include page-title;
-          text-align: center;
-          text-decoration: underline solid 2px;
-        }
+          h3 {
+            @include subtitle;
+            text-decoration: none;
+          }
 
-        h4 {
-          font-weight: 400;
-          font-size: 20px;
-          text-align: center;
-          padding: 20px;
-        }
+          h4 {
+            font-weight: 400;
+            font-size: 20px;
+            text-align: center;
+            padding: 20px;
+          }
 
-        ul {
-          max-height: 80vh;
-          li {
-            .traume-collapsible {
+          // SYMPTOM-KNAPPER //
+
+          .traumecollapsible {
+            @include links;
+            font-size: 1.5vw;
+            position: relative;
+            background: none;
+            cursor: pointer;
+            padding: 18px 0;
+            width: 100%;
+            border: none;
+            outline: none;
+
+            &:hover {
+              background-color: rgba(255, 255, 255, 0.753);
+
+              transition: 1s;
+            }
+
+            h3 {
               @include links;
               font-size: 1.5vw;
-              position: relative;
-              background: none;
-              cursor: pointer;
-              padding: 18px;
-              width: 100%;
-              border: none;
-              outline: none;
-
-              &:hover {
-                background-color: rgba(255, 255, 255, 0.753);
-                transition: 1s;
-              }
-
-              h3 {
-                @include page-title;
-              }
-
-              .active {
-                background-color: #ccc;
-              }
             }
 
             @media screen and (max-width: 800px) {
-              .traume-collapsible {
+              h3 {
                 font-size: 4vw;
               }
             }
-            .content {
-              position: absolute;
-              left: 0;
-              padding: 0 18px;
-              max-height: 0;
-              overflow: hidden;
-              transition: max-height 0.2s ease-out;
-              background-color: #f1f1f1;
-
-              h3 {
-                @include page-title;
-                text-align: center;
-                text-decoration: underline solid 2px;
-              }
-            }
           }
-        }
-        .item-one {
-          width: 400px;
-          height: 50px;
-          position: relative;
-          animation-name: item-one;
-          animation-duration: 3s;
-          animation-delay: 4s;
-          animation-direction: normal;
-          animation-fill-mode: forwards;
-
-          @keyframes item-one {
-            0% {
-              left: 0%;
-            }
-
-            100% {
-              left: 38%;
-            }
+          .active {
+            background-color: #ccc;
           }
-          @media screen and(max-width: 800px) {
-            @keyframes item-one {
-              0% {
-                display: none;
-              }
 
-              100% {
-                display: none;
-              }
-            }
-          }
-        }
+          .content {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
 
-        .item-two {
-          width: 400px;
-          height: 50px;
-          position: relative;
-          animation-name: item-two;
-          animation-delay: 5s;
-          animation-duration: 3s;
-          animation-direction: normal;
-          animation-fill-mode: forwards;
-
-          @keyframes item-two {
-            0% {
-              left: 0px;
-              top: 0px;
+            h3 {
+              @include page-title;
+              text-align: center;
             }
 
-            100% {
-              left: 38%;
-              top: 0;
-            }
-          }
-          @media screen and(max-width: 800px) {
-            @keyframes item-two {
-              0% {
-                display: none;
-              }
-
-              100% {
-                display: none;
-              }
-            }
-          }
-        }
-
-        .item-three {
-          width: 400px;
-          height: 50px;
-          position: relative;
-          animation-name: item-three;
-          animation-duration: 3s;
-          animation-delay: 6s;
-          animation-direction: normal;
-          animation-fill-mode: forwards;
-
-          @keyframes item-three {
-            0% {
-              left: 0px;
-              top: 0px;
-            }
-
-            100% {
-              left: 38%;
-              top: 0;
-            }
-          }
-          @media screen and(max-width: 800px) {
-            @keyframes item-three {
-              0% {
-                display: none;
-              }
-
-              100% {
-                display: none;
-              }
-            }
-          }
-        }
-
-        .item-four {
-          width: 400px;
-          height: 50px;
-          position: relative;
-          animation-name: item-four;
-          animation-duration: 3s;
-          animation-delay: 7s;
-          animation-direction: normal;
-          animation-fill-mode: forwards;
-
-          @keyframes item-four {
-            0% {
-              left: 0px;
-              top: 0px;
-            }
-
-            100% {
-              left: 38%;
-              top: 0;
-            }
-          }
-          @media screen and(max-width: 800px) {
-            @keyframes item-four {
-              0% {
-                display: none;
-              }
-
-              100% {
-                display: none;
-              }
+            p {
+              @include p;
             }
           }
         }

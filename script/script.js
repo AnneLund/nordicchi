@@ -22,7 +22,7 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-var coll = document.getElementsByClassName("traume-collapsible");
+var coll = document.getElementsByClassName("traumecollapsible");
 var i;
 
 for (i = 0; i < coll.length; i++) {

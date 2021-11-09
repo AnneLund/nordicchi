@@ -29,7 +29,7 @@ html body .container .title h3 {
     font-size: 5vw;
   }
 }
-html body .container .text .button-five .collapsible {
+html body .container .button-five .collapsible {
   position: relative;
   background: none;
   cursor: pointer;
@@ -38,17 +38,24 @@ html body .container .text .button-five .collapsible {
   border: none;
   outline: none;
 }
-html body .container .text .button-five .collapsible:hover {
+html body .container .button-five .collapsible:hover {
   background-color: white;
   transition: 1s;
 }
-html body .container .text .button-five .collapsible:after {
+html body .container .button-five .collapsible:after {
   content: "+";
   font-size: 35px;
   font-weight: bold;
   margin: 20px;
 }
-html body .container .text .button-five .collapsible h3 {
+@media screen and (max-width: 800px) {
+  html body .container .button-five .collapsible:after {
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 0;
+  }
+}
+html body .container .button-five .collapsible h3 {
   font-size: 2vw;
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
@@ -57,39 +64,34 @@ html body .container .text .button-five .collapsible h3 {
           text-decoration: underline 1px;
 }
 @media screen and (max-width: 800px) {
-  html body .container .text .button-five .collapsible:after {
-    font-size: 35px;
-    font-weight: lighter;
-    margin: 0;
-  }
-  html body .container .text .button-five .collapsible h3 {
+  html body .container .button-five .collapsible h3 {
     font-size: 4vw;
   }
 }
-html body .container .text .button-five .active {
+html body .container .button-five .active {
   background-color: #ccc;
 }
-html body .container .text .button-five .active:after {
+html body .container .button-five .active:after {
   content: "−";
 }
-html body .container .text .content {
+html body .container .button-five .content {
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
 }
-html body .container .text .content figure {
+html body .container .button-five .content figure {
   display: grid;
   grid-template-columns: auto auto;
 }
-html body .container .text .content figure img {
+html body .container .button-five .content figure img {
   width: 90%;
 }
-html body .container .text .content figure figcaption {
+html body .container .button-five .content figure figcaption {
   padding: 70px;
 }
-html body .container .text .content figure figcaption h4 {
+html body .container .button-five .content figure figcaption h4 {
   font-size: 2.5vw;
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
@@ -99,15 +101,15 @@ html body .container .text .content figure figcaption h4 {
   padding: 0 0 20px 0;
 }
 @media screen and (max-width: 800px) {
-  html body .container .text .content figure {
+  html body .container .button-five .content figure {
     display: grid;
     grid-template-columns: auto;
   }
-  html body .container .text .content figure figcaption {
+  html body .container .button-five .content figure figcaption {
     padding: 0;
   }
 }
-html body .container .collapsible {
+html body .container .button-six .collapsible {
   color: black;
   text-decoration: none;
   font-family: "Alegreya Sans SC", sans-serif;
@@ -120,17 +122,24 @@ html body .container .collapsible {
   border: none;
   outline: none;
 }
-html body .container .collapsible:hover {
+html body .container .button-six .collapsible:hover {
   background-color: white;
   transition: 1s;
 }
-html body .container .collapsible:after {
+html body .container .button-six .collapsible:after {
   content: "+";
   font-size: 35px;
   font-weight: bold;
   margin: 20px;
 }
-html body .container .collapsible h3 {
+@media screen and (max-width: 800px) {
+  html body .container .button-six .collapsible:after {
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 0;
+  }
+}
+html body .container .button-six .collapsible h3 {
   font-size: 2vw;
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
@@ -140,50 +149,40 @@ html body .container .collapsible h3 {
   text-align: center;
 }
 @media screen and (max-width: 800px) {
-  html body .container .collapsible:after {
-    font-size: 35px;
-    font-weight: lighter;
-    margin: 0;
-  }
-  html body .container .collapsible h3 {
+  html body .container .button-six .collapsible h3 {
     font-size: 4vw;
   }
 }
-html body .container .collapsible .active {
+html body .container .button-six .active {
   background-color: #ccc;
 }
-html body .container .collapsible .active:after {
+html body .container .button-six .active:after {
   content: "−";
 }
-html body .container .content {
+html body .container .button-six .content {
   width: 100%;
-  padding: 0 18px;
+  padding: 18px 0;
   max-height: 0;
-  height: 100vh;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f5f3ef;
+  z-index: 5;
 }
-html body .container .content h3 {
-  font-size: 2.5vw;
+html body .container .button-six .content h3 {
+  font-size: 2vw;
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
-  background-color: rgba(102, 102, 102, 0.178);
-  text-align: center;
-  -webkit-text-decoration: underline solid 2px;
-          text-decoration: underline solid 2px;
+  -webkit-text-decoration: underline 1px;
+          text-decoration: underline 1px;
+  text-decoration: none;
 }
-html body .container .content h4 {
+html body .container .button-six .content h4 {
   font-weight: 400;
   font-size: 20px;
   text-align: center;
   padding: 20px;
 }
-html body .container .content ul {
-  max-height: 80vh;
-}
-html body .container .content ul li .traume-collapsible {
+html body .container .button-six .content .traumecollapsible {
   color: black;
   text-decoration: none;
   font-family: "Alegreya Sans SC", sans-serif;
@@ -192,31 +191,32 @@ html body .container .content ul li .traume-collapsible {
   position: relative;
   background: none;
   cursor: pointer;
-  padding: 18px;
+  padding: 18px 0;
   width: 100%;
   border: none;
   outline: none;
 }
-html body .container .content ul li .traume-collapsible:hover {
+html body .container .button-six .content .traumecollapsible:hover {
   background-color: rgba(255, 255, 255, 0.753);
   transition: 1s;
 }
-html body .container .content ul li .traume-collapsible h3 {
-  font-size: 2.5vw;
+html body .container .button-six .content .traumecollapsible h3 {
+  color: black;
+  text-decoration: none;
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
-  padding: 20px;
-  background-color: rgba(102, 102, 102, 0.178);
-}
-html body .container .content ul li .traume-collapsible .active {
-  background-color: #ccc;
+  font-size: 1.5vw;
 }
 @media screen and (max-width: 800px) {
-  html body .container .content ul li .traume-collapsible {
+  html body .container .button-six .content .traumecollapsible h3 {
     font-size: 4vw;
   }
 }
-html body .container .content ul li .content {
+html body .container .button-six .content .active {
+  background-color: #ccc;
+}
+html body .container .button-six .content .content {
+  width: 100%;
   position: absolute;
   left: 0;
   padding: 0 18px;
@@ -225,221 +225,14 @@ html body .container .content ul li .content {
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
 }
-html body .container .content ul li .content h3 {
+html body .container .button-six .content .content h3 {
   font-size: 2.5vw;
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
   background-color: rgba(102, 102, 102, 0.178);
   text-align: center;
-  -webkit-text-decoration: underline solid 2px;
-          text-decoration: underline solid 2px;
 }
-html body .container .content .item-one {
-  width: 400px;
-  height: 50px;
-  position: relative;
-  -webkit-animation-name: item-one;
-          animation-name: item-one;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-@-webkit-keyframes item-one {
-  0% {
-    left: 0%;
-  }
-  100% {
-    left: 38%;
-  }
-}
-@keyframes item-one {
-  0% {
-    left: 0%;
-  }
-  100% {
-    left: 38%;
-  }
-}
-@media screen and (max-width: 800px) {
-  @-webkit-keyframes item-one {
-    0% {
-      display: none;
-    }
-    100% {
-      display: none;
-    }
-  }
-  @keyframes item-one {
-    0% {
-      display: none;
-    }
-    100% {
-      display: none;
-    }
-  }
-}
-html body .container .content .item-two {
-  width: 400px;
-  height: 50px;
-  position: relative;
-  -webkit-animation-name: item-two;
-          animation-name: item-two;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-@-webkit-keyframes item-two {
-  0% {
-    left: 0px;
-    top: 0px;
-  }
-  100% {
-    left: 38%;
-    top: 0;
-  }
-}
-@keyframes item-two {
-  0% {
-    left: 0px;
-    top: 0px;
-  }
-  100% {
-    left: 38%;
-    top: 0;
-  }
-}
-@media screen and (max-width: 800px) {
-  @-webkit-keyframes item-two {
-    0% {
-      display: none;
-    }
-    100% {
-      display: none;
-    }
-  }
-  @keyframes item-two {
-    0% {
-      display: none;
-    }
-    100% {
-      display: none;
-    }
-  }
-}
-html body .container .content .item-three {
-  width: 400px;
-  height: 50px;
-  position: relative;
-  -webkit-animation-name: item-three;
-          animation-name: item-three;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-@-webkit-keyframes item-three {
-  0% {
-    left: 0px;
-    top: 0px;
-  }
-  100% {
-    left: 38%;
-    top: 0;
-  }
-}
-@keyframes item-three {
-  0% {
-    left: 0px;
-    top: 0px;
-  }
-  100% {
-    left: 38%;
-    top: 0;
-  }
-}
-@media screen and (max-width: 800px) {
-  @-webkit-keyframes item-three {
-    0% {
-      display: none;
-    }
-    100% {
-      display: none;
-    }
-  }
-  @keyframes item-three {
-    0% {
-      display: none;
-    }
-    100% {
-      display: none;
-    }
-  }
-}
-html body .container .content .item-four {
-  width: 400px;
-  height: 50px;
-  position: relative;
-  -webkit-animation-name: item-four;
-          animation-name: item-four;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-@-webkit-keyframes item-four {
-  0% {
-    left: 0px;
-    top: 0px;
-  }
-  100% {
-    left: 38%;
-    top: 0;
-  }
-}
-@keyframes item-four {
-  0% {
-    left: 0px;
-    top: 0px;
-  }
-  100% {
-    left: 38%;
-    top: 0;
-  }
-}
-@media screen and (max-width: 800px) {
-  @-webkit-keyframes item-four {
-    0% {
-      display: none;
-    }
-    100% {
-      display: none;
-    }
-  }
-  @keyframes item-four {
-    0% {
-      display: none;
-    }
-    100% {
-      display: none;
-    }
-  }
+html body .container .button-six .content .content p {
+  padding: 20px;
 }/*# sourceMappingURL=traumer.css.map */

@@ -15,4 +15,7 @@ html {
 html body {
   max-width: 1630px;
   margin: auto;
+}
+html body .button-three p {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
