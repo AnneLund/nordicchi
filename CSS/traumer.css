@@ -119,7 +119,7 @@ html body .container .text .button-five .content figure figcaption h4 {
     padding: 0;
   }
 }
-html body .container .text .button-six .collapsible {
+html body .container .text .collapsible {
   color: black;
   text-decoration: none;
   font-family: "Caveat", cursive;
@@ -132,11 +132,11 @@ html body .container .text .button-six .collapsible {
   border: none;
   outline: none;
 }
-html body .container .text .button-six .collapsible:hover {
+html body .container .text .collapsible:hover {
   background-color: white;
   transition: 1s;
 }
-html body .container .text .button-six .collapsible:after {
+html body .container .text .collapsible:after {
   position: absolute;
   top: 10%;
   right: 25.4%;
@@ -146,7 +146,7 @@ html body .container .text .button-six .collapsible:after {
   font-weight: bold;
   margin: 20px;
 }
-html body .container .text .button-six .collapsible h3 {
+html body .container .text .collapsible h3 {
   font-size: 2vw;
   font-family: "Caveat", cursive;
   font-weight: 200;
@@ -157,24 +157,226 @@ html body .container .text .button-six .collapsible h3 {
   text-align: center;
 }
 @media screen and (max-width: 800px) {
-  html body .container .text .button-six .collapsible h3 {
+  html body .container .text .collapsible h3 {
     font-size: 4vw;
   }
 }
-html body .container .text .button-six .collapsible .active {
+html body .container .text .collapsible .active {
   background-color: #ccc;
 }
-html body .container .text .button-six .collapsible .active:after {
+html body .container .text .collapsible .active:after {
   content: "−";
 }
-html body .container .text .button-six .content {
+html body .container .text .content {
+  width: 100%;
+  padding: 0 18px;
+  max-height: 0;
+  height: 70vh;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+html body .container .text .content h3 {
+  font-size: 2.5vw;
+  font-family: "Caveat", cursive;
+  font-weight: 200;
+  padding: 20px;
+  text-align: center;
+  -webkit-text-decoration: underline solid 2px;
+          text-decoration: underline solid 2px;
+  -webkit-text-decoration-color: #b68877;
+          text-decoration-color: #b68877;
+}
+html body .container .text .content h4 {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+}
+html body .container .text .content ul {
+  text-align: left;
+}
+html body .container .text .content .item-one {
+  text-align: left;
+  width: 400px;
+  height: 50px;
+  position: relative;
+  -webkit-animation-name: item-one;
+          animation-name: item-one;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes item-one {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  100% {
+    left: 38%;
+    top: 0;
+  }
+}
+@keyframes item-one {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  100% {
+    left: 38%;
+    top: 0;
+  }
+}
+html body .container .text .content .item-two {
+  text-align: left;
+  width: 400px;
+  height: 50px;
+  position: relative;
+  -webkit-animation-name: item-two;
+          animation-name: item-two;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes item-two {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 38%;
+    top: 0;
+  }
+}
+@keyframes item-two {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 38%;
+    top: 0;
+  }
+}
+html body .container .text .content .item-three {
+  text-align: left;
+  width: 400px;
+  height: 50px;
+  position: relative;
+  -webkit-animation-name: item-three;
+          animation-name: item-three;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes item-three {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 38%;
+    top: 0;
+  }
+}
+@keyframes item-three {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 38%;
+    top: 0;
+  }
+}
+html body .container .text .content .item-four {
+  width: 400px;
+  height: 50px;
+  position: relative;
+  -webkit-animation-name: item-four;
+          animation-name: item-four;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes item-four {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 38%;
+    top: 0;
+  }
+}
+@keyframes item-four {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 38%;
+    top: 0;
+  }
+}
+html body .container .text .content .traume-collapsible {
+  color: black;
+  text-decoration: none;
+  font-family: "Caveat", cursive;
+  font-weight: 600;
+  font-size: 1.5vw;
+  background-color: lightcoral;
+  position: relative;
+  background: none;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+html body .container .text .content .traume-collapsible:hover {
+  background-color: rgba(255, 255, 255, 0.753);
+  transition: 1s;
+}
+html body .container .text .content .traume-collapsible h3 {
+  font-size: 2.5vw;
+  font-family: "Caveat", cursive;
+  font-weight: 200;
+  padding: 20px;
+}
+html body .container .text .content .traume-collapsible .active {
+  background-color: #ccc;
+}
+html body .container .text .content .content {
+  position: absolute;
+  left: 0;
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
 }
-html body .container .text .button-six .content h3 {
+html body .container .text .content .content h3 {
   font-size: 2.5vw;
   font-family: "Caveat", cursive;
   font-weight: 200;

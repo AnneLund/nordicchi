@@ -157,9 +157,175 @@ html {
           }
         }
 
-        .button-six {
-          .collapsible {
+        .collapsible {
+          @include links;
+          position: relative;
+          background: none;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          outline: none;
+
+          &:hover {
+            background-color: rgb(255, 255, 255);
+            transition: 1s;
+          }
+
+          &:after {
+            position: absolute;
+            top: 10%;
+            right: 25.4%;
+            content: "\002B";
+            color: rgb(107, 50, 50);
+            font-size: 40px;
+            font-weight: bold;
+            margin: 20px;
+          }
+
+          h3 {
+            @include subtitle;
+            text-align: center;
+          }
+
+          @media screen and (max-width: 800px) {
+            h3 {
+              font-size: 4vw;
+            }
+          }
+
+          .active {
+            background-color: #ccc;
+            &:after {
+              content: "\2212";
+            }
+          }
+        }
+
+        .content {
+          width: 100%;
+          padding: 0 18px;
+          max-height: 0;
+          height: 70vh;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+          background-color: #f1f1f1;
+
+          h3 {
+            @include page-title;
+            text-align: center;
+            text-decoration: underline solid 2px;
+            text-decoration-color: $red;
+          }
+
+          h4 {
+            font-weight: 400;
+            font-size: 20px;
+            text-align: center;
+            padding: 20px;
+          }
+
+          ul {
+            text-align: left;
+          }
+
+          .item-one {
+            text-align: left;
+            width: 400px;
+            height: 50px;
+            position: relative;
+            animation-name: item-one;
+            animation-duration: 3s;
+            animation-delay: 4s;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+            @keyframes item-one {
+              0% {
+                left: 0;
+                top: 0;
+              }
+
+              100% {
+                left: 38%;
+                top: 0;
+              }
+            }
+          }
+
+          .item-two {
+            text-align: left;
+            width: 400px;
+            height: 50px;
+            position: relative;
+            animation-name: item-two;
+            animation-delay: 5s;
+            animation-duration: 3s;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+
+            @keyframes item-two {
+              0% {
+                left: 0px;
+                top: 0px;
+              }
+
+              100% {
+                left: 38%;
+                top: 0;
+              }
+            }
+          }
+
+          .item-three {
+            text-align: left;
+            width: 400px;
+            height: 50px;
+            position: relative;
+            animation-name: item-three;
+            animation-duration: 3s;
+            animation-delay: 6s;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+
+            @keyframes item-three {
+              0% {
+                left: 0px;
+                top: 0px;
+              }
+
+              100% {
+                left: 38%;
+                top: 0;
+              }
+            }
+          }
+
+          .item-four {
+            width: 400px;
+            height: 50px;
+            position: relative;
+            animation-name: item-four;
+            animation-duration: 3s;
+            animation-delay: 7s;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+
+            @keyframes item-four {
+              0% {
+                left: 0px;
+                top: 0px;
+              }
+
+              100% {
+                left: 38%;
+                top: 0;
+              }
+            }
+          }
+          .traume-collapsible {
             @include links;
+            font-size: 1.5vw;
+            background-color: lightcoral;
             position: relative;
             background: none;
             cursor: pointer;
@@ -169,41 +335,21 @@ html {
             outline: none;
 
             &:hover {
-              background-color: rgb(255, 255, 255);
+              background-color: rgba(255, 255, 255, 0.753);
               transition: 1s;
             }
 
-            &:after {
-              position: absolute;
-              top: 10%;
-              right: 25.4%;
-              content: "\002B";
-              color: rgb(107, 50, 50);
-              font-size: 40px;
-              font-weight: bold;
-              margin: 20px;
-            }
-
             h3 {
-              @include subtitle;
-              text-align: center;
-            }
-
-            @media screen and (max-width: 800px) {
-              h3 {
-                font-size: 4vw;
-              }
+              @include page-title;
             }
 
             .active {
               background-color: #ccc;
-              &:after {
-                content: "\2212";
-              }
             }
           }
-
           .content {
+            position: absolute;
+            left: 0;
             padding: 0 18px;
             max-height: 0;
             overflow: hidden;
