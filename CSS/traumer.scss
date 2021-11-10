@@ -35,7 +35,6 @@ $baggrund2: rgba(102, 102, 102, 0.178);
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
-  background-color: $baggrund2;
 }
 
 @mixin subtitle {
@@ -43,7 +42,6 @@ $baggrund2: rgba(102, 102, 102, 0.178);
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
-  text-decoration: underline 1px;
 }
 
 @mixin p {
@@ -92,7 +90,7 @@ html {
             // right: 25%;
             content: "\002B";
             font-size: 35px;
-            font-weight: bold;
+            font-weight: 100;
             margin: 20px;
           }
 
@@ -116,7 +114,6 @@ html {
         }
 
         .active {
-          background-color: #ccc;
           &:after {
             content: "\2212";
           }
@@ -180,7 +177,7 @@ html {
             // right: 25.4%;
             content: "\002B";
             font-size: 35px;
-            font-weight: bold;
+            font-weight: 100;
             margin: 20px;
           }
 
@@ -204,7 +201,6 @@ html {
         }
 
         .active {
-          background-color: #ccc;
           &:after {
             content: "\2212";
           }
@@ -251,18 +247,34 @@ html {
             }
 
             h3 {
-              @include links;
-              font-size: 1.5vw;
+              .underline--stars {
+                background-image: url(/images/brush.png);
+                background-position: 0 1.7em;
+                background-size: 290px 5px;
+                @include subtitle;
+              }
+
+              .underline {
+                background-repeat: no-repeat;
+              }
             }
 
             @media screen and (max-width: 800px) {
               h3 {
-                font-size: 4vw;
+                .underline--stars {
+                  background-image: url(/images/brush.png);
+                  background-position: 0 1.7em;
+                  background-size: 270px 3px;
+                  font-size: 5vw;
+                }
+
+                .underline {
+                  background-repeat: no-repeat;
+                }
               }
             }
           }
           .active {
-            background-color: #ccc;
           }
 
           .content {

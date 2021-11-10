@@ -42,7 +42,6 @@ $baggrund2: rgba(185, 185, 185, 0.055);
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
-  text-decoration: underline 1px;
 }
 
 @mixin p {
@@ -76,64 +75,84 @@ body {
   }
 
   .col-4 {
-    background-color: $baggrund2;
     display: grid;
     grid-template-columns: auto auto auto auto;
 
-    .collapsible {
-      position: relative;
-      background: none;
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      border: none;
-      outline: none;
+    .button-one {
+      .collapsible {
+        position: relative;
+        background: none;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        outline: none;
 
-      &:hover {
-        background-color: rgba(255, 255, 255, 0.753);
-        transition: 1s;
-      }
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.753);
+          transition: 1s;
+        }
 
-      h3 {
-        @include page-title;
+        h3 {
+          .underline--stars {
+            background-image: url(/images/brush.png);
+            background-position: 0 1.4em;
+            background-size: 430px 5px;
+            @include page-title;
+          }
+
+          .underline {
+            background-repeat: no-repeat;
+          }
+        }
 
         @media screen and (max-width: 800px) {
           h3 {
-            font-size: 8vw;
+            .underline--stars {
+              background-image: url(/images/brush.png);
+              background-position: 0 1.7em;
+              background-size: 270px 3px;
+              @include page-title;
+              font-size: 5vw;
+            }
+
+            .underline {
+              background-repeat: no-repeat;
+            }
           }
         }
-      }
 
-      .active {
-        background-color: #ccc;
-      }
-    }
-
-    .content {
-      position: absolute;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.2s ease-out;
-
-      .text {
-        padding: 10px 50px 50px;
-        text-align: center;
-        h3 {
-          @include page-title;
-          text-align: center;
-          text-decoration: underline solid 2px;
-        }
-
-        p {
-          padding: 10px;
+        .active {
+          background-color: #ccc;
         }
       }
 
-      @media screen and (max-width: 800px) {
+      .content {
+        position: absolute;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+
         .text {
-          padding: 0;
+          padding: 10px 50px 50px;
+          text-align: center;
           h3 {
-            font-size: 6vw;
+            @include page-title;
+            text-align: center;
+            text-decoration: underline solid 2px;
+          }
+
+          p {
+            padding: 10px;
+          }
+        }
+
+        @media screen and (max-width: 800px) {
+          .text {
+            padding: 0;
+            h3 {
+              font-size: 6vw;
+            }
           }
         }
       }
@@ -155,7 +174,32 @@ body {
       }
 
       h3 {
-        @include page-title;
+        .underline--stars {
+          background-image: url(/images/brush.png);
+          background-position: 0 1.4em;
+          background-size: 380px 5px;
+          @include page-title;
+        }
+
+        .underline {
+          background-repeat: no-repeat;
+        }
+      }
+
+      @media screen and (max-width: 800px) {
+        h3 {
+          .underline--stars {
+            background-image: url(/images/brush.png);
+            background-position: 0 1.7em;
+            background-size: 250px 3px;
+            @include page-title;
+            font-size: 5vw;
+          }
+
+          .underline {
+            background-repeat: no-repeat;
+          }
+        }
       }
 
       .active {
@@ -163,75 +207,124 @@ body {
       }
     }
 
-    .collapsible {
-      position: relative;
-      background: none;
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      border: none;
-      outline: none;
-      font-size: 15px;
+    // OM MIG //
 
-      &:hover {
-        background-color: rgba(255, 255, 255, 0.753);
-        transition: 1s;
+    .button-three {
+      .collapsible {
+        position: relative;
+        background: none;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        outline: none;
+        font-size: 15px;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.753);
+          transition: 1s;
+        }
+
+        h3 {
+          .underline--stars {
+            background-image: url(/images/brush.png);
+            background-position: 0 1.4em;
+            background-size: 180px 5px;
+            @include page-title;
+          }
+
+          .underline {
+            background-repeat: no-repeat;
+          }
+        }
+
+        @media screen and (max-width: 800px) {
+          h3 {
+            .underline--stars {
+              background-image: url(/images/brush.png);
+              background-position: 0 1.7em;
+              background-size: 130px 3px;
+              @include page-title;
+              font-size: 5vw;
+            }
+
+            .underline {
+              background-repeat: no-repeat;
+            }
+          }
+        }
+
+        .active {
+          background-color: #ccc;
+        }
       }
+      .content {
+        position: absolute;
+        left: 0;
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: $baggrund;
 
-      h3 {
-        @include page-title;
-      }
-
-      .active {
-        background-color: #ccc;
+        h3 {
+          @include page-title;
+          text-align: center;
+          text-decoration: underline solid 2px;
+        }
       }
     }
-    .content {
-      position: absolute;
-      left: 0;
-      padding: 0 18px;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.2s ease-out;
-      background-color: $baggrund;
 
-      h3 {
-        @include page-title;
-        text-align: center;
-        text-decoration: underline solid 2px;
-      }
-    }
+    // WEBSHOP //
 
-    .collapsible {
-      position: relative;
-      background: none;
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      border: none;
-      outline: none;
-      font-size: 15px;
+    .button-four {
+      .collapsible {
+        position: relative;
+        background: none;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        outline: none;
+        font-size: 15px;
 
-      &:hover {
-        background-color: rgba(255, 255, 255, 0.753);
-        transition: 1s;
-      }
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.753);
+          transition: 1s;
+        }
 
-      h3 {
-        @include page-title;
+        h3 {
+          .underline--stars {
+            background-image: url(/images/brush.png);
+            background-position: 0 1.4em;
+            background-size: 210px 5px;
+            @include page-title;
+          }
 
-        // .underline--stars {
-        //   background-image:
-        //   background-position: 0 1.06em;
-        //   background-size: 10px 9px;
-        // }
-        // .underline {
-        //   background-repeat: repeat-x;
-        // }
-      }
+          .underline {
+            background-repeat: no-repeat;
+          }
+        }
 
-      .active {
-        background-color: #ccc;
+        @media screen and (max-width: 800px) {
+          h3 {
+            .underline--stars {
+              background-image: url(/images/brush.png);
+              background-position: 0 1.7em;
+              background-size: 150px 3px;
+              @include page-title;
+              font-size: 5vw;
+            }
+
+            .underline {
+              background-repeat: no-repeat;
+            }
+          }
+        }
+
+        .active {
+          background-color: #ccc;
+        }
       }
     }
   }

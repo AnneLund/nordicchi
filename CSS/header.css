@@ -31,11 +31,10 @@ body header h1 a {
   }
 }
 body .col-4 {
-  background-color: rgba(185, 185, 185, 0.055);
   display: grid;
   grid-template-columns: auto auto auto auto;
 }
-body .col-4 .collapsible {
+body .col-4 .button-one .collapsible {
   position: relative;
   background: none;
   cursor: pointer;
@@ -44,35 +43,51 @@ body .col-4 .collapsible {
   border: none;
   outline: none;
 }
-body .col-4 .collapsible:hover {
+body .col-4 .button-one .collapsible:hover {
   background-color: rgba(255, 255, 255, 0.753);
   transition: 1s;
 }
-body .col-4 .collapsible h3 {
+body .col-4 .button-one .collapsible h3 .underline--stars {
+  background-image: url(/images/brush.png);
+  background-position: 0 1.4em;
+  background-size: 430px 5px;
   font-size: 2.5vw;
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
 }
+body .col-4 .button-one .collapsible h3 .underline {
+  background-repeat: no-repeat;
+}
 @media screen and (max-width: 800px) {
-  body .col-4 .collapsible h3 h3 {
-    font-size: 8vw;
+  body .col-4 .button-one .collapsible h3 .underline--stars {
+    background-image: url(/images/brush.png);
+    background-position: 0 1.7em;
+    background-size: 270px 3px;
+    font-size: 2.5vw;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 200;
+    padding: 20px;
+    font-size: 5vw;
+  }
+  body .col-4 .button-one .collapsible h3 .underline {
+    background-repeat: no-repeat;
   }
 }
-body .col-4 .collapsible .active {
+body .col-4 .button-one .collapsible .active {
   background-color: #ccc;
 }
-body .col-4 .content {
+body .col-4 .button-one .content {
   position: absolute;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
-body .col-4 .content .text {
+body .col-4 .button-one .content .text {
   padding: 10px 50px 50px;
   text-align: center;
 }
-body .col-4 .content .text h3 {
+body .col-4 .button-one .content .text h3 {
   font-size: 2.5vw;
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
@@ -81,14 +96,14 @@ body .col-4 .content .text h3 {
   -webkit-text-decoration: underline solid 2px;
           text-decoration: underline solid 2px;
 }
-body .col-4 .content .text p {
+body .col-4 .button-one .content .text p {
   padding: 10px;
 }
 @media screen and (max-width: 800px) {
-  body .col-4 .content .text {
+  body .col-4 .button-one .content .text {
     padding: 0;
   }
-  body .col-4 .content .text h3 {
+  body .col-4 .button-one .content .text h3 {
     font-size: 6vw;
   }
 }
@@ -106,16 +121,37 @@ body .col-4 .hvad-er-traumer:hover {
   background-color: rgba(255, 255, 255, 0.753);
   transition: 1s;
 }
-body .col-4 .hvad-er-traumer h3 {
+body .col-4 .hvad-er-traumer h3 .underline--stars {
+  background-image: url(/images/brush.png);
+  background-position: 0 1.4em;
+  background-size: 380px 5px;
   font-size: 2.5vw;
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
 }
+body .col-4 .hvad-er-traumer h3 .underline {
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 800px) {
+  body .col-4 .hvad-er-traumer h3 .underline--stars {
+    background-image: url(/images/brush.png);
+    background-position: 0 1.7em;
+    background-size: 250px 3px;
+    font-size: 2.5vw;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 200;
+    padding: 20px;
+    font-size: 5vw;
+  }
+  body .col-4 .hvad-er-traumer h3 .underline {
+    background-repeat: no-repeat;
+  }
+}
 body .col-4 .hvad-er-traumer .active {
   background-color: #ccc;
 }
-body .col-4 .collapsible {
+body .col-4 .button-three .collapsible {
   position: relative;
   background: none;
   cursor: pointer;
@@ -125,20 +161,41 @@ body .col-4 .collapsible {
   outline: none;
   font-size: 15px;
 }
-body .col-4 .collapsible:hover {
+body .col-4 .button-three .collapsible:hover {
   background-color: rgba(255, 255, 255, 0.753);
   transition: 1s;
 }
-body .col-4 .collapsible h3 {
+body .col-4 .button-three .collapsible h3 .underline--stars {
+  background-image: url(/images/brush.png);
+  background-position: 0 1.4em;
+  background-size: 180px 5px;
   font-size: 2.5vw;
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
 }
-body .col-4 .collapsible .active {
+body .col-4 .button-three .collapsible h3 .underline {
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 800px) {
+  body .col-4 .button-three .collapsible h3 .underline--stars {
+    background-image: url(/images/brush.png);
+    background-position: 0 1.7em;
+    background-size: 130px 3px;
+    font-size: 2.5vw;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 200;
+    padding: 20px;
+    font-size: 5vw;
+  }
+  body .col-4 .button-three .collapsible h3 .underline {
+    background-repeat: no-repeat;
+  }
+}
+body .col-4 .button-three .collapsible .active {
   background-color: #ccc;
 }
-body .col-4 .content {
+body .col-4 .button-three .content {
   position: absolute;
   left: 0;
   padding: 0 18px;
@@ -147,7 +204,7 @@ body .col-4 .content {
   transition: max-height 0.2s ease-out;
   background-color: #f5f3ef;
 }
-body .col-4 .content h3 {
+body .col-4 .button-three .content h3 {
   font-size: 2.5vw;
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
@@ -156,7 +213,7 @@ body .col-4 .content h3 {
   -webkit-text-decoration: underline solid 2px;
           text-decoration: underline solid 2px;
 }
-body .col-4 .collapsible {
+body .col-4 .button-four .collapsible {
   position: relative;
   background: none;
   cursor: pointer;
@@ -166,17 +223,38 @@ body .col-4 .collapsible {
   outline: none;
   font-size: 15px;
 }
-body .col-4 .collapsible:hover {
+body .col-4 .button-four .collapsible:hover {
   background-color: rgba(255, 255, 255, 0.753);
   transition: 1s;
 }
-body .col-4 .collapsible h3 {
+body .col-4 .button-four .collapsible h3 .underline--stars {
+  background-image: url(/images/brush.png);
+  background-position: 0 1.4em;
+  background-size: 210px 5px;
   font-size: 2.5vw;
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
 }
-body .col-4 .collapsible .active {
+body .col-4 .button-four .collapsible h3 .underline {
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 800px) {
+  body .col-4 .button-four .collapsible h3 .underline--stars {
+    background-image: url(/images/brush.png);
+    background-position: 0 1.7em;
+    background-size: 150px 3px;
+    font-size: 2.5vw;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 200;
+    padding: 20px;
+    font-size: 5vw;
+  }
+  body .col-4 .button-four .collapsible h3 .underline {
+    background-repeat: no-repeat;
+  }
+}
+body .col-4 .button-four .collapsible .active {
   background-color: #ccc;
 }
 @media screen and (max-width: 800px) {

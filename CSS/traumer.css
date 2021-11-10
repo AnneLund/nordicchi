@@ -21,7 +21,6 @@ html body .container .title h3 {
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
-  background-color: rgba(102, 102, 102, 0.178);
   text-align: center;
 }
 @media screen and (max-width: 800px) {
@@ -45,7 +44,7 @@ html body .container .button-five .collapsible:hover {
 html body .container .button-five .collapsible:after {
   content: "+";
   font-size: 35px;
-  font-weight: bold;
+  font-weight: 100;
   margin: 20px;
 }
 @media screen and (max-width: 800px) {
@@ -60,16 +59,11 @@ html body .container .button-five .collapsible h3 {
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
-  -webkit-text-decoration: underline 1px;
-          text-decoration: underline 1px;
 }
 @media screen and (max-width: 800px) {
   html body .container .button-five .collapsible h3 {
     font-size: 4vw;
   }
-}
-html body .container .button-five .active {
-  background-color: #ccc;
 }
 html body .container .button-five .active:after {
   content: "−";
@@ -96,7 +90,6 @@ html body .container .button-five .content figure figcaption h4 {
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
-  background-color: rgba(102, 102, 102, 0.178);
   font-size: 30px;
   padding: 0 0 20px 0;
 }
@@ -129,7 +122,7 @@ html body .container .button-six .collapsible:hover {
 html body .container .button-six .collapsible:after {
   content: "+";
   font-size: 35px;
-  font-weight: bold;
+  font-weight: 100;
   margin: 20px;
 }
 @media screen and (max-width: 800px) {
@@ -144,17 +137,12 @@ html body .container .button-six .collapsible h3 {
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
-  -webkit-text-decoration: underline 1px;
-          text-decoration: underline 1px;
   text-align: center;
 }
 @media screen and (max-width: 800px) {
   html body .container .button-six .collapsible h3 {
     font-size: 4vw;
   }
-}
-html body .container .button-six .active {
-  background-color: #ccc;
 }
 html body .container .button-six .active:after {
   content: "−";
@@ -172,8 +160,6 @@ html body .container .button-six .content h3 {
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
-  -webkit-text-decoration: underline 1px;
-          text-decoration: underline 1px;
   text-decoration: none;
 }
 html body .container .button-six .content h4 {
@@ -200,20 +186,28 @@ html body .container .button-six .content .traumecollapsible:hover {
   background-color: rgba(255, 255, 255, 0.753);
   transition: 1s;
 }
-html body .container .button-six .content .traumecollapsible h3 {
-  color: black;
-  text-decoration: none;
+html body .container .button-six .content .traumecollapsible h3 .underline--stars {
+  background-image: url(/images/brush.png);
+  background-position: 0 1.7em;
+  background-size: 290px 5px;
+  font-size: 2vw;
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
-  font-size: 1.5vw;
+  padding: 20px;
+}
+html body .container .button-six .content .traumecollapsible h3 .underline {
+  background-repeat: no-repeat;
 }
 @media screen and (max-width: 800px) {
-  html body .container .button-six .content .traumecollapsible h3 {
-    font-size: 4vw;
+  html body .container .button-six .content .traumecollapsible h3 .underline--stars {
+    background-image: url(/images/brush.png);
+    background-position: 0 1.7em;
+    background-size: 270px 3px;
+    font-size: 5vw;
   }
-}
-html body .container .button-six .content .active {
-  background-color: #ccc;
+  html body .container .button-six .content .traumecollapsible h3 .underline {
+    background-repeat: no-repeat;
+  }
 }
 html body .container .button-six .content .content {
   width: 100%;
@@ -230,7 +224,6 @@ html body .container .button-six .content .content h3 {
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
-  background-color: rgba(102, 102, 102, 0.178);
   text-align: center;
 }
 html body .container .button-six .content .content p {

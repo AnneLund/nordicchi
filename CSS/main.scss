@@ -35,7 +35,6 @@ $baggrund2: rgba(102, 102, 102, 0.178);
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
-  background-color: $baggrund2;
 }
 
 @mixin subtitle {
@@ -43,7 +42,6 @@ $baggrund2: rgba(102, 102, 102, 0.178);
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
-  text-decoration: underline 1px;
 }
 
 @mixin p {
