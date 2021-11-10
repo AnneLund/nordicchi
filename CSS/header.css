@@ -82,6 +82,7 @@ body .col-4 .button-one .content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  background-color: #f5f3ef;
 }
 body .col-4 .button-one .content .text {
   padding: 10px 50px 50px;
@@ -93,15 +94,13 @@ body .col-4 .button-one .content .text h3 {
   font-weight: 200;
   padding: 20px;
   text-align: center;
-  -webkit-text-decoration: underline solid 2px;
-          text-decoration: underline solid 2px;
 }
 body .col-4 .button-one .content .text p {
-  padding: 10px;
+  padding: 0;
 }
 @media screen and (max-width: 800px) {
   body .col-4 .button-one .content .text {
-    padding: 0;
+    padding: 50px;
   }
   body .col-4 .button-one .content .text h3 {
     font-size: 6vw;
@@ -210,8 +209,7 @@ body .col-4 .button-three .content h3 {
   font-weight: 200;
   padding: 20px;
   text-align: center;
-  -webkit-text-decoration: underline solid 2px;
-          text-decoration: underline solid 2px;
+  font-size: 5vw;
 }
 body .col-4 .button-four .collapsible {
   position: relative;
