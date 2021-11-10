@@ -55,7 +55,6 @@ html {
 
   body {
     max-width: 1630px;
-    margin: auto;
 
     .container {
       .title {
@@ -283,6 +282,14 @@ html {
 
             p {
               @include p;
+              text-align: center;
+              padding: 40px 200px;
+            }
+
+            @media screen and (max-width: 800px) {
+              p {
+                padding: 10px 0;
+              }
             }
           }
         }

@@ -55,7 +55,14 @@ html {
 
   body {
     max-width: 1630px;
-    margin: auto;
+
+    .logobjaelke {
+      text-align: center;
+      img {
+        width: 20vw;
+        z-index: -5;
+      }
+    }
 
     .button-three {
       p {

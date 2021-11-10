@@ -15,7 +15,6 @@ html {
 }
 html body {
   max-width: 1630px;
-  margin: auto;
 }
 html body .container .title h3 {
   font-size: 2.5vw;
@@ -236,4 +235,11 @@ html body .container .button-six .content .content h3 {
 }
 html body .container .button-six .content .content p {
   padding: 20px;
+  text-align: center;
+  padding: 40px 200px;
+}
+@media screen and (max-width: 800px) {
+  html body .container .button-six .content .content p {
+    padding: 10px 0;
+  }
 }/*# sourceMappingURL=traumer.css.map */

@@ -13,6 +13,12 @@ body {
   position: relative;
   background-color: #f5f3ef;
 }
+body header {
+  text-align: center;
+}
+body header h1 {
+  position: relative;
+}
 body header h1 a {
   font-size: 7vw;
   font-family: "Alegreya Sans SC", sans-serif;
@@ -25,7 +31,7 @@ body header h1 a {
   }
 }
 body .col-4 {
-  background-color: rgba(0, 0, 0, 0.048);
+  background-color: rgba(185, 185, 185, 0.055);
   display: grid;
   grid-template-columns: auto auto auto auto;
 }
@@ -59,8 +65,8 @@ body .col-4 .collapsible .active {
 body .col-4 .content {
   position: absolute;
   max-height: 0;
+  overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
 }
 body .col-4 .content .text {
   padding: 10px 50px 50px;
@@ -139,7 +145,7 @@ body .col-4 .content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+  background-color: #f5f3ef;
 }
 body .col-4 .content h3 {
   font-size: 2.5vw;
@@ -181,13 +187,13 @@ body .col-4 .collapsible .active {
   body .col-4 .collapsible h3 {
     font-size: 5vw;
   }
-  body .col-4 .hvad-er-traumer h3 {
-    font-size: 5vw;
-  }
   body .col-4 .content {
-    z-index: 1;
+    z-index: 5;
   }
   body .col-4 .content h3 {
+    font-size: 5vw;
+  }
+  body .col-4 .hvad-er-traumer h3 {
     font-size: 5vw;
   }
 }/*# sourceMappingURL=header.css.map */

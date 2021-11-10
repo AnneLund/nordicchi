@@ -13,7 +13,7 @@
 // COLORMODS
 
 $baggrund: #f5f3ef;
-$baggrund2: rgba(0, 0, 0, 0.048);
+$baggrund2: rgba(185, 185, 185, 0.055);
 
 // MIXINS
 
@@ -54,8 +54,10 @@ body {
   background-color: $baggrund;
 
   header {
+    text-align: center;
     // background-color: $farve;
     h1 {
+      position: relative;
       a {
         @include title;
         padding: 20px 10px;
@@ -110,9 +112,8 @@ body {
     .content {
       position: absolute;
       max-height: 0;
-      // overflow: hidden;
+      overflow: hidden;
       transition: max-height 0.2s ease-out;
-      background-color: #f1f1f1;
 
       .text {
         padding: 10px 50px 50px;
@@ -192,7 +193,7 @@ body {
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.2s ease-out;
-      background-color: #f1f1f1;
+      background-color: $baggrund;
 
       h3 {
         @include page-title;
@@ -218,6 +219,15 @@ body {
 
       h3 {
         @include page-title;
+
+        // .underline--stars {
+        //   background-image:
+        //   background-position: 0 1.06em;
+        //   background-size: 10px 9px;
+        // }
+        // .underline {
+        //   background-repeat: repeat-x;
+        // }
       }
 
       .active {
@@ -239,14 +249,14 @@ body {
         }
       }
 
-      .hvad-er-traumer {
+      .content {
+        z-index: 5;
         h3 {
           font-size: 5vw;
         }
       }
 
-      .content {
-        z-index: 1;
+      .hvad-er-traumer {
         h3 {
           font-size: 5vw;
         }

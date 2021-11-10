@@ -14,7 +14,13 @@ html {
 }
 html body {
   max-width: 1630px;
-  margin: auto;
+}
+html body .logobjaelke {
+  text-align: center;
+}
+html body .logobjaelke img {
+  width: 20vw;
+  z-index: -5;
 }
 html body .button-three p {
   text-align: center;
