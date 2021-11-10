@@ -37,23 +37,6 @@ html body .container .button-five .collapsible {
   border: none;
   outline: none;
 }
-html body .container .button-five .collapsible:hover {
-  background-color: white;
-  transition: 1s;
-}
-html body .container .button-five .collapsible:after {
-  content: "+";
-  font-size: 35px;
-  font-weight: 100;
-  margin: 20px;
-}
-@media screen and (max-width: 800px) {
-  html body .container .button-five .collapsible:after {
-    font-size: 20px;
-    font-weight: lighter;
-    margin: 0;
-  }
-}
 html body .container .button-five .collapsible h3 {
   font-size: 2vw;
   font-family: "Alegreya Sans SC", sans-serif;
@@ -65,6 +48,23 @@ html body .container .button-five .collapsible h3 {
     font-size: 4vw;
   }
 }
+html body .container .button-five .collapsible:hover {
+  background-color: white;
+  transition: 1s;
+}
+html body .container .button-five .collapsible:after {
+  content: "+";
+  font-size: 35px;
+  font-weight: lighter;
+  margin: 20px;
+}
+@media screen and (max-width: 800px) {
+  html body .container .button-five .collapsible:after {
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 0;
+  }
+}
 html body .container .button-five .active:after {
   content: "−";
 }
@@ -73,7 +73,6 @@ html body .container .button-five .content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
 }
 html body .container .button-five .content figure {
   display: grid;
@@ -83,7 +82,7 @@ html body .container .button-five .content figure img {
   width: 90%;
 }
 html body .container .button-five .content figure figcaption {
-  padding: 70px;
+  padding: 40px;
 }
 html body .container .button-five .content figure figcaption h4 {
   font-size: 2.5vw;
@@ -100,6 +99,7 @@ html body .container .button-five .content figure figcaption h4 {
   }
   html body .container .button-five .content figure figcaption {
     padding: 0;
+    text-align: center;
   }
 }
 html body .container .button-six .collapsible {
@@ -115,23 +115,6 @@ html body .container .button-six .collapsible {
   border: none;
   outline: none;
 }
-html body .container .button-six .collapsible:hover {
-  background-color: white;
-  transition: 1s;
-}
-html body .container .button-six .collapsible:after {
-  content: "+";
-  font-size: 35px;
-  font-weight: 100;
-  margin: 20px;
-}
-@media screen and (max-width: 800px) {
-  html body .container .button-six .collapsible:after {
-    font-size: 20px;
-    font-weight: lighter;
-    margin: 0;
-  }
-}
 html body .container .button-six .collapsible h3 {
   font-size: 2vw;
   font-family: "Alegreya Sans SC", sans-serif;
@@ -142,6 +125,23 @@ html body .container .button-six .collapsible h3 {
 @media screen and (max-width: 800px) {
   html body .container .button-six .collapsible h3 {
     font-size: 4vw;
+  }
+}
+html body .container .button-six .collapsible:hover {
+  background-color: white;
+  transition: 1s;
+}
+html body .container .button-six .collapsible:after {
+  content: "+";
+  font-size: 35px;
+  font-weight: 300;
+  margin: 20px;
+}
+@media screen and (max-width: 800px) {
+  html body .container .button-six .collapsible:after {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
   }
 }
 html body .container .button-six .active:after {
@@ -163,12 +163,12 @@ html body .container .button-six .content h3 {
   text-decoration: none;
 }
 html body .container .button-six .content h4 {
-  font-weight: 400;
+  font-weight: 200;
   font-size: 20px;
   text-align: center;
   padding: 20px;
 }
-html body .container .button-six .content .traumecollapsible {
+html body .container .button-six .content .item-one .traumecollapsible {
   color: black;
   text-decoration: none;
   font-family: "Alegreya Sans SC", sans-serif;
@@ -182,34 +182,34 @@ html body .container .button-six .content .traumecollapsible {
   border: none;
   outline: none;
 }
-html body .container .button-six .content .traumecollapsible:hover {
+html body .container .button-six .content .item-one .traumecollapsible:hover {
   background-color: rgba(255, 255, 255, 0.753);
   transition: 1s;
 }
-html body .container .button-six .content .traumecollapsible h3 .underline--stars {
+html body .container .button-six .content .item-one .traumecollapsible h3 .underline--stars {
   background-image: url(/images/brush.png);
   background-position: 0 1.7em;
-  background-size: 290px 5px;
+  background-size: 260px 5px;
   font-size: 2vw;
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
 }
-html body .container .button-six .content .traumecollapsible h3 .underline {
+html body .container .button-six .content .item-one .traumecollapsible h3 .underline {
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 800px) {
-  html body .container .button-six .content .traumecollapsible h3 .underline--stars {
+  html body .container .button-six .content .item-one .traumecollapsible h3 .underline--stars {
     background-image: url(/images/brush.png);
     background-position: 0 1.7em;
     background-size: 270px 3px;
     font-size: 5vw;
   }
-  html body .container .button-six .content .traumecollapsible h3 .underline {
+  html body .container .button-six .content .item-one .traumecollapsible h3 .underline {
     background-repeat: no-repeat;
   }
 }
-html body .container .button-six .content .content {
+html body .container .button-six .content .item-one .content {
   width: 100%;
   position: absolute;
   left: 0;
@@ -219,20 +219,220 @@ html body .container .button-six .content .content {
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
 }
-html body .container .button-six .content .content h3 {
+html body .container .button-six .content .item-one .content h3 {
   font-size: 2.5vw;
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
   text-align: center;
 }
-html body .container .button-six .content .content p {
-  padding: 20px;
+html body .container .button-six .content .item-one .content p {
   text-align: center;
   padding: 40px 200px;
 }
 @media screen and (max-width: 800px) {
-  html body .container .button-six .content .content p {
+  html body .container .button-six .content .item-one .content p {
+    padding: 10px 0;
+  }
+}
+html body .container .button-six .content .item-two .traumecollapsible {
+  color: black;
+  text-decoration: none;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
+  font-size: 1.5vw;
+  position: relative;
+  background: none;
+  cursor: pointer;
+  padding: 18px 0;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+html body .container .button-six .content .item-two .traumecollapsible:hover {
+  background-color: rgba(255, 255, 255, 0.753);
+  transition: 1s;
+}
+html body .container .button-six .content .item-two .traumecollapsible h3 .underline--stars {
+  background-image: url(/images/brush.png);
+  background-position: 0 1.7em;
+  background-size: 270px 5px;
+  font-size: 2vw;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
+  padding: 20px;
+}
+html body .container .button-six .content .item-two .traumecollapsible h3 .underline {
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 800px) {
+  html body .container .button-six .content .item-two .traumecollapsible h3 .underline--stars {
+    background-image: url(/images/brush.png);
+    background-position: 0 1.7em;
+    background-size: 270px 3px;
+    font-size: 5vw;
+  }
+  html body .container .button-six .content .item-two .traumecollapsible h3 .underline {
+    background-repeat: no-repeat;
+  }
+}
+html body .container .button-six .content .item-two .content {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+html body .container .button-six .content .item-two .content h3 {
+  font-size: 2.5vw;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
+  padding: 20px;
+  text-align: center;
+}
+html body .container .button-six .content .item-two .content p {
+  text-align: center;
+  padding: 40px 200px;
+}
+@media screen and (max-width: 800px) {
+  html body .container .button-six .content .item-two .content p {
+    padding: 10px 0;
+  }
+}
+html body .container .button-six .content .item-three .traumecollapsible {
+  color: black;
+  text-decoration: none;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
+  font-size: 1.5vw;
+  position: relative;
+  background: none;
+  cursor: pointer;
+  padding: 18px 0;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+html body .container .button-six .content .item-three .traumecollapsible:hover {
+  background-color: rgba(255, 255, 255, 0.753);
+  transition: 1s;
+}
+html body .container .button-six .content .item-three .traumecollapsible h3 .underline--stars {
+  background-image: url(/images/brush.png);
+  background-position: 0 1.7em;
+  background-size: 420px 5px;
+  font-size: 2vw;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
+  padding: 20px;
+}
+html body .container .button-six .content .item-three .traumecollapsible h3 .underline {
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 800px) {
+  html body .container .button-six .content .item-three .traumecollapsible h3 .underline--stars {
+    background-image: url(/images/brush.png);
+    background-position: 0 1.7em;
+    background-size: 270px 3px;
+    font-size: 5vw;
+  }
+  html body .container .button-six .content .item-three .traumecollapsible h3 .underline {
+    background-repeat: no-repeat;
+  }
+}
+html body .container .button-six .content .item-three .content {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+html body .container .button-six .content .item-three .content h3 {
+  font-size: 2.5vw;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
+  padding: 20px;
+  text-align: center;
+}
+html body .container .button-six .content .item-three .content p {
+  text-align: center;
+  padding: 40px 200px;
+}
+@media screen and (max-width: 800px) {
+  html body .container .button-six .content .item-three .content p {
+    padding: 10px 0;
+  }
+}
+html body .container .button-six .content .item-four .traumecollapsible {
+  color: black;
+  text-decoration: none;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
+  font-size: 1.5vw;
+  position: relative;
+  background: none;
+  cursor: pointer;
+  padding: 18px 0;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+html body .container .button-six .content .item-four .traumecollapsible:hover {
+  background-color: rgba(255, 255, 255, 0.753);
+  transition: 1s;
+}
+html body .container .button-six .content .item-four .traumecollapsible h3 .underline--stars {
+  background-image: url(/images/brush.png);
+  background-position: 0 1.7em;
+  background-size: 650px 5px;
+  font-size: 2vw;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
+  padding: 20px;
+}
+html body .container .button-six .content .item-four .traumecollapsible h3 .underline {
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 800px) {
+  html body .container .button-six .content .item-four .traumecollapsible h3 .underline--stars {
+    background-image: url(/images/brush.png);
+    background-position: 0 1.7em;
+    background-size: 270px 3px;
+    font-size: 5vw;
+  }
+  html body .container .button-six .content .item-four .traumecollapsible h3 .underline {
+    background-repeat: no-repeat;
+  }
+}
+html body .container .button-six .content .item-four .content {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+html body .container .button-six .content .item-four .content h3 {
+  font-size: 2.5vw;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
+  padding: 20px;
+  text-align: center;
+}
+html body .container .button-six .content .item-four .content p {
+  text-align: center;
+  padding: 40px 200px;
+}
+@media screen and (max-width: 800px) {
+  html body .container .button-six .content .item-four .content p {
     padding: 10px 0;
   }
 }/*# sourceMappingURL=traumer.css.map */

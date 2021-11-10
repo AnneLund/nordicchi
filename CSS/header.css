@@ -100,10 +100,13 @@ body .col-4 .button-one .content .text p {
 }
 @media screen and (max-width: 800px) {
   body .col-4 .button-one .content .text {
-    padding: 50px;
+    padding: 20px 0;
   }
   body .col-4 .button-one .content .text h3 {
     font-size: 6vw;
+  }
+  body .col-4 .button-one .content .text p {
+    padding: 10px;
   }
 }
 body .col-4 .hvad-er-traumer {
