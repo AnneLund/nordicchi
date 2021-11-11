@@ -22,6 +22,7 @@ html body .container .title h3 {
   font-weight: 200;
   padding: 20px;
   text-align: center;
+  font-size: 40px;
 }
 @media screen and (max-width: 800px) {
   html body .container .title h3 {
@@ -80,9 +81,11 @@ html body .container .button-five .content figure {
 }
 html body .container .button-five .content figure img {
   width: 90%;
+  padding: 0 40px;
 }
 html body .container .button-five .content figure figcaption {
-  padding: 40px;
+  padding: 90px 40px;
+  text-align: center;
 }
 html body .container .button-five .content figure figcaption h4 {
   font-size: 2.5vw;
@@ -99,7 +102,6 @@ html body .container .button-five .content figure figcaption h4 {
   }
   html body .container .button-five .content figure figcaption {
     padding: 0;
-    text-align: center;
   }
 }
 html body .container .button-six .collapsible {

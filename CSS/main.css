@@ -12,16 +12,37 @@
 html {
   scroll-behavior: smooth;
 }
-html body {
-  max-width: 1630px;
+html body .container {
+  max-width: 1920px;
+  margin: auto;
 }
-html body .logobjaelke {
+html body .container header {
   text-align: center;
 }
-html body .logobjaelke img {
+html body .container header h1 {
+  position: relative;
+  padding: 50px 0 0 0;
+}
+html body .container header h1 a {
+  font-size: 7vw;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
+}
+@media screen and (max-width: 800px) {
+  html body .container header h1 a {
+    font-size: 15vw;
+  }
+}
+html body .container .logobjaelke {
+  text-align: center;
+}
+html body .container .logobjaelke img {
   width: 20vw;
   z-index: -5;
 }
-html body .button-three p {
+html body .container .button-three .content h3 {
+  font-size: 40px;
+}
+html body .container .button-three .content p {
   text-align: center;
 }/*# sourceMappingURL=main.css.map */
