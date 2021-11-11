@@ -13,11 +13,38 @@ body {
   position: relative;
   background-color: #f5f3ef;
 }
-body .col-4 {
+
+header {
+  text-align: center;
+}
+header h1 {
+  position: relative;
+  padding: 50px 0 0 0;
+}
+header h1 a {
+  font-size: 7vw;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 800px) {
+  header h1 a {
+    font-size: 15vw;
+  }
+}
+.logobjaelke {
+  text-align: center;
+}
+.logobjaelke img {
+  width: 20vw;
+  z-index: -5;
+}
+
+.col-4 {
   display: grid;
   grid-template-columns: auto auto auto auto;
 }
-body .col-4 .button-one .collapsible {
+.col-4 .button-one .collapsible {
   position: relative;
   background: none;
   cursor: pointer;
@@ -26,11 +53,11 @@ body .col-4 .button-one .collapsible {
   border: none;
   outline: none;
 }
-body .col-4 .button-one .collapsible:hover {
+.col-4 .button-one .collapsible:hover {
   background-color: rgba(255, 255, 255, 0.753);
   transition: 1s;
 }
-body .col-4 .button-one .collapsible h3 .underline--stars {
+.col-4 .button-one .collapsible h3 .underline--stars {
   background-image: url(/images/brush.png);
   background-position: 0 1.4em;
   background-size: 25.5vw 5px;
@@ -39,11 +66,11 @@ body .col-4 .button-one .collapsible h3 .underline--stars {
   font-weight: 200;
   padding: 20px;
 }
-body .col-4 .button-one .collapsible h3 .underline {
+.col-4 .button-one .collapsible h3 .underline {
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 800px) {
-  body .col-4 .button-one .collapsible h3 .underline--stars {
+  .col-4 .button-one .collapsible h3 .underline--stars {
     background-image: url(/images/brush.png);
     background-position: 0 1.7em;
     background-size: 52vw 3px;
@@ -53,46 +80,46 @@ body .col-4 .button-one .collapsible h3 .underline {
     padding: 20px;
     font-size: 5vw;
   }
-  body .col-4 .button-one .collapsible h3 .underline {
+  .col-4 .button-one .collapsible h3 .underline {
     background-repeat: no-repeat;
   }
 }
-body .col-4 .button-one .collapsible .active {
+.col-4 .button-one .collapsible .active {
   background-color: #ccc;
 }
-body .col-4 .button-one .content {
+.col-4 .button-one .content {
   position: absolute;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f5f3ef;
 }
-body .col-4 .button-one .content .text {
+.col-4 .button-one .content .text {
   padding: 10px 50px 50px;
   text-align: center;
 }
-body .col-4 .button-one .content .text h3 {
+.col-4 .button-one .content .text h3 {
   font-size: 2.5vw;
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
   padding: 20px;
   text-align: center;
 }
-body .col-4 .button-one .content .text p {
+.col-4 .button-one .content .text p {
   padding: 0;
 }
 @media screen and (max-width: 800px) {
-  body .col-4 .button-one .content .text {
+  .col-4 .button-one .content .text {
     padding: 20px 0;
   }
-  body .col-4 .button-one .content .text h3 {
+  .col-4 .button-one .content .text h3 {
     font-size: 6vw;
   }
-  body .col-4 .button-one .content .text p {
+  .col-4 .button-one .content .text p {
     padding: 10px;
   }
 }
-body .col-4 .hvad-er-traumer {
+.col-4 .hvad-er-traumer {
   position: relative;
   background: none;
   cursor: pointer;
@@ -102,11 +129,11 @@ body .col-4 .hvad-er-traumer {
   outline: none;
   font-size: 15px;
 }
-body .col-4 .hvad-er-traumer:hover {
+.col-4 .hvad-er-traumer:hover {
   background-color: rgba(255, 255, 255, 0.753);
   transition: 1s;
 }
-body .col-4 .hvad-er-traumer h3 .underline--stars {
+.col-4 .hvad-er-traumer h3 .underline--stars {
   background-image: url(/images/brush.png);
   background-position: 0 1.4em;
   background-size: 23vw 5px;
@@ -115,11 +142,11 @@ body .col-4 .hvad-er-traumer h3 .underline--stars {
   font-weight: 200;
   padding: 20px;
 }
-body .col-4 .hvad-er-traumer h3 .underline {
+.col-4 .hvad-er-traumer h3 .underline {
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 800px) {
-  body .col-4 .hvad-er-traumer h3 .underline--stars {
+  .col-4 .hvad-er-traumer h3 .underline--stars {
     background-image: url(/images/brush.png);
     background-position: 0 1.7em;
     background-size: 46vw 3px;
@@ -129,14 +156,14 @@ body .col-4 .hvad-er-traumer h3 .underline {
     padding: 20px;
     font-size: 5vw;
   }
-  body .col-4 .hvad-er-traumer h3 .underline {
+  .col-4 .hvad-er-traumer h3 .underline {
     background-repeat: no-repeat;
   }
 }
-body .col-4 .hvad-er-traumer .active {
+.col-4 .hvad-er-traumer .active {
   background-color: #ccc;
 }
-body .col-4 .button-three .collapsible {
+.col-4 .button-three .collapsible {
   position: relative;
   background: none;
   cursor: pointer;
@@ -146,11 +173,11 @@ body .col-4 .button-three .collapsible {
   outline: none;
   font-size: 15px;
 }
-body .col-4 .button-three .collapsible:hover {
+.col-4 .button-three .collapsible:hover {
   background-color: rgba(255, 255, 255, 0.753);
   transition: 1s;
 }
-body .col-4 .button-three .collapsible h3 .underline--stars {
+.col-4 .button-three .collapsible h3 .underline--stars {
   background-image: url(/images/brush.png);
   background-position: 0 1.4em;
   background-size: 10.5vw 5px;
@@ -159,11 +186,11 @@ body .col-4 .button-three .collapsible h3 .underline--stars {
   font-weight: 200;
   padding: 20px;
 }
-body .col-4 .button-three .collapsible h3 .underline {
+.col-4 .button-three .collapsible h3 .underline {
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 800px) {
-  body .col-4 .button-three .collapsible h3 .underline--stars {
+  .col-4 .button-three .collapsible h3 .underline--stars {
     background-image: url(/images/brush.png);
     background-position: 0 1.7em;
     background-size: 22vw 3px;
@@ -173,14 +200,14 @@ body .col-4 .button-three .collapsible h3 .underline {
     padding: 20px;
     font-size: 5vw;
   }
-  body .col-4 .button-three .collapsible h3 .underline {
+  .col-4 .button-three .collapsible h3 .underline {
     background-repeat: no-repeat;
   }
 }
-body .col-4 .button-three .collapsible .active {
+.col-4 .button-three .collapsible .active {
   background-color: #ccc;
 }
-body .col-4 .button-three .content {
+.col-4 .button-three .content {
   position: absolute;
   left: 0;
   padding: 0 18px;
@@ -189,7 +216,7 @@ body .col-4 .button-three .content {
   transition: max-height 0.2s ease-out;
   background-color: #f5f3ef;
 }
-body .col-4 .button-three .content h3 {
+.col-4 .button-three .content h3 {
   font-size: 2.5vw;
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 200;
@@ -197,7 +224,7 @@ body .col-4 .button-three .content h3 {
   text-align: center;
   font-size: 5vw;
 }
-body .col-4 .button-four .collapsible {
+.col-4 .button-four .collapsible {
   position: relative;
   background: none;
   cursor: pointer;
@@ -207,11 +234,11 @@ body .col-4 .button-four .collapsible {
   outline: none;
   font-size: 15px;
 }
-body .col-4 .button-four .collapsible:hover {
+.col-4 .button-four .collapsible:hover {
   background-color: rgba(255, 255, 255, 0.753);
   transition: 1s;
 }
-body .col-4 .button-four .collapsible h3 .underline--stars {
+.col-4 .button-four .collapsible h3 .underline--stars {
   background-image: url(/images/brush.png);
   background-position: 0 1.4em;
   background-size: 13vw 5px;
@@ -220,11 +247,11 @@ body .col-4 .button-four .collapsible h3 .underline--stars {
   font-weight: 200;
   padding: 20px;
 }
-body .col-4 .button-four .collapsible h3 .underline {
+.col-4 .button-four .collapsible h3 .underline {
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 800px) {
-  body .col-4 .button-four .collapsible h3 .underline--stars {
+  .col-4 .button-four .collapsible h3 .underline--stars {
     background-image: url(/images/brush.png);
     background-position: 0 1.7em;
     background-size: 26vw 3px;
@@ -234,28 +261,29 @@ body .col-4 .button-four .collapsible h3 .underline {
     padding: 20px;
     font-size: 5vw;
   }
-  body .col-4 .button-four .collapsible h3 .underline {
+  .col-4 .button-four .collapsible h3 .underline {
     background-repeat: no-repeat;
   }
 }
-body .col-4 .button-four .collapsible .active {
+.col-4 .button-four .collapsible .active {
   background-color: #ccc;
 }
+
 @media screen and (max-width: 800px) {
-  body .col-4 {
+  .col-4 {
     display: block;
     padding: 20px;
   }
-  body .col-4 .collapsible h3 {
+  .col-4 .collapsible h3 {
     font-size: 5vw;
   }
-  body .col-4 .content {
+  .col-4 .content {
     z-index: 5;
   }
-  body .col-4 .content h3 {
+  .col-4 .content h3 {
     font-size: 5vw;
   }
-  body .col-4 .hvad-er-traumer h3 {
+  .col-4 .hvad-er-traumer h3 {
     font-size: 5vw;
   }
 }
