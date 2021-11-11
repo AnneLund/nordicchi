@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Open Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  position: relative;
+  background-color: #f5f3ef;
+}
+body .col-4 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+body .col-4 .button-one .collapsible {
+  position: relative;
+  background: none;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+body .col-4 .button-one .collapsible:hover {
+  background-color: rgba(255, 255, 255, 0.753);
+  transition: 1s;
+}
+body .col-4 .button-one .collapsible h3 .underline--stars {
+  background-image: url(/images/brush.png);
+  background-position: 0 1.4em;
+  background-size: 25.5vw 5px;
+  font-size: 2.5vw;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
+  padding: 20px;
+}
+body .col-4 .button-one .collapsible h3 .underline {
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 800px) {
+  body .col-4 .button-one .collapsible h3 .underline--stars {
+    background-image: url(/images/brush.png);
+    background-position: 0 1.7em;
+    background-size: 52vw 3px;
+    font-size: 2.5vw;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 200;
+    padding: 20px;
+    font-size: 5vw;
+  }
+  body .col-4 .button-one .collapsible h3 .underline {
+    background-repeat: no-repeat;
+  }
+}
+body .col-4 .button-one .collapsible .active {
+  background-color: #ccc;
+}
+body .col-4 .button-one .content {
+  position: absolute;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f5f3ef;
+}
+body .col-4 .button-one .content .text {
+  padding: 10px 50px 50px;
+  text-align: center;
+}
+body .col-4 .button-one .content .text h3 {
+  font-size: 2.5vw;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
+  padding: 20px;
+  text-align: center;
+}
+body .col-4 .button-one .content .text p {
+  padding: 0;
+}
+@media screen and (max-width: 800px) {
+  body .col-4 .button-one .content .text {
+    padding: 20px 0;
+  }
+  body .col-4 .button-one .content .text h3 {
+    font-size: 6vw;
+  }
+  body .col-4 .button-one .content .text p {
+    padding: 10px;
+  }
+}
+body .col-4 .hvad-er-traumer {
+  position: relative;
+  background: none;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+body .col-4 .hvad-er-traumer:hover {
+  background-color: rgba(255, 255, 255, 0.753);
+  transition: 1s;
+}
+body .col-4 .hvad-er-traumer h3 .underline--stars {
+  background-image: url(/images/brush.png);
+  background-position: 0 1.4em;
+  background-size: 23vw 5px;
+  font-size: 2.5vw;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
+  padding: 20px;
+}
+body .col-4 .hvad-er-traumer h3 .underline {
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 800px) {
+  body .col-4 .hvad-er-traumer h3 .underline--stars {
+    background-image: url(/images/brush.png);
+    background-position: 0 1.7em;
+    background-size: 46vw 3px;
+    font-size: 2.5vw;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 200;
+    padding: 20px;
+    font-size: 5vw;
+  }
+  body .col-4 .hvad-er-traumer h3 .underline {
+    background-repeat: no-repeat;
+  }
+}
+body .col-4 .hvad-er-traumer .active {
+  background-color: #ccc;
+}
+body .col-4 .button-three .collapsible {
+  position: relative;
+  background: none;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+body .col-4 .button-three .collapsible:hover {
+  background-color: rgba(255, 255, 255, 0.753);
+  transition: 1s;
+}
+body .col-4 .button-three .collapsible h3 .underline--stars {
+  background-image: url(/images/brush.png);
+  background-position: 0 1.4em;
+  background-size: 10.5vw 5px;
+  font-size: 2.5vw;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
+  padding: 20px;
+}
+body .col-4 .button-three .collapsible h3 .underline {
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 800px) {
+  body .col-4 .button-three .collapsible h3 .underline--stars {
+    background-image: url(/images/brush.png);
+    background-position: 0 1.7em;
+    background-size: 22vw 3px;
+    font-size: 2.5vw;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 200;
+    padding: 20px;
+    font-size: 5vw;
+  }
+  body .col-4 .button-three .collapsible h3 .underline {
+    background-repeat: no-repeat;
+  }
+}
+body .col-4 .button-three .collapsible .active {
+  background-color: #ccc;
+}
+body .col-4 .button-three .content {
+  position: absolute;
+  left: 0;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f5f3ef;
+}
+body .col-4 .button-three .content h3 {
+  font-size: 2.5vw;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
+  padding: 20px;
+  text-align: center;
+  font-size: 5vw;
+}
+body .col-4 .button-four .collapsible {
+  position: relative;
+  background: none;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+body .col-4 .button-four .collapsible:hover {
+  background-color: rgba(255, 255, 255, 0.753);
+  transition: 1s;
+}
+body .col-4 .button-four .collapsible h3 .underline--stars {
+  background-image: url(/images/brush.png);
+  background-position: 0 1.4em;
+  background-size: 13vw 5px;
+  font-size: 2.5vw;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
+  padding: 20px;
+}
+body .col-4 .button-four .collapsible h3 .underline {
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 800px) {
+  body .col-4 .button-four .collapsible h3 .underline--stars {
+    background-image: url(/images/brush.png);
+    background-position: 0 1.7em;
+    background-size: 26vw 3px;
+    font-size: 2.5vw;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 200;
+    padding: 20px;
+    font-size: 5vw;
+  }
+  body .col-4 .button-four .collapsible h3 .underline {
+    background-repeat: no-repeat;
+  }
+}
+body .col-4 .button-four .collapsible .active {
+  background-color: #ccc;
+}
+@media screen and (max-width: 800px) {
+  body .col-4 {
+    display: block;
+    padding: 20px;
+  }
+  body .col-4 .collapsible h3 {
+    font-size: 5vw;
+  }
+  body .col-4 .content {
+    z-index: 5;
+  }
+  body .col-4 .content h3 {
+    font-size: 5vw;
+  }
+  body .col-4 .hvad-er-traumer h3 {
+    font-size: 5vw;
+  }
+}

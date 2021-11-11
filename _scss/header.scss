@@ -280,17 +280,21 @@ body {
         }
 
         h3 {
-          .underline--stars {
-            background-image: url(/images/brush.png);
-            background-position: 0 1.4em;
-            background-size: 13vw 5px;
-            @include page-title;
-          }
+            
 
-          .underline {
-            background-repeat: no-repeat;
+            .underline--stars {
+              background-image: url(/images/brush.png);
+              background-position: 0 1.4em;
+              background-size: 13vw 5px;
+              @include page-title;
+            }
+           
+            .underline {
+              background-repeat: no-repeat;
+            }
           }
-        }
+          
+          
 
         @media screen and (max-width: 800px) {
           h3 {

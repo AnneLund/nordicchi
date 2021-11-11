@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Open Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html body .container {
+  max-width: 1920px;
+  margin: auto;
+}
+html body .container header {
+  text-align: center;
+}
+html body .container header h1 {
+  position: relative;
+  padding: 50px 0 0 0;
+}
+html body .container header h1 a {
+  font-size: 7vw;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
+}
+@media screen and (max-width: 800px) {
+  html body .container header h1 a {
+    font-size: 15vw;
+  }
+}
+html body .container .logobjaelke {
+  text-align: center;
+}
+html body .container .logobjaelke img {
+  width: 20vw;
+  z-index: -5;
+}
+html body .container .button-three .content h3 {
+  font-size: 40px;
+}
+html body .container .button-three .content p {
+  text-align: center;
+}
