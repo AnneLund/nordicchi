@@ -61,6 +61,10 @@ body {
         @include title;
       }
     }
+    h3{
+      @include page-title;
+      padding: 0;
+    }
   }
 
   @media screen and (max-width: 800px) {
@@ -69,6 +73,10 @@ body {
         a {
           font-size: 15vw;
         }
+      }
+
+      h3{
+        font-size: 5vw;
       }
     }
   }
