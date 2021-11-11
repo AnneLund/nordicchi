@@ -1,37 +1,86 @@
-.cards .shoppingcards {
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Open Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1920px;
+  margin: auto;
+}
+.container header h1 {
+  text-align: center;
+}
+.container header h1 .logo {
+  position: absolute;
+  top: 30px;
+  right: 150px;
+  padding: 0;
+  margin: 0;
+}
+.container header h1 img {
+  width: 30%;
+}
+.container header h3 {
+  text-align: center;
+}
+.container .cards .shoppingcards {
   display: grid;
   grid-template-columns: auto auto auto auto;
 }
-.cards .shoppingcards .card {
+.container .cards .shoppingcards .card {
   padding-bottom: 30px;
   max-width: 300px;
   margin: 60px;
   text-align: center;
-  font-family: arial;
   gap: 40px;
 }
-.cards .shoppingcards .card img {
-  width: 50%;
+.container .cards .shoppingcards .card img {
+  width: 80%;
   padding: 20px;
 }
-.cards .shoppingcards .card .price {
-  color: grey;
-  font-size: 22px;
+.container .cards .shoppingcards .card h2 {
+  color: black;
+  text-decoration: none;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
+  font-weight: 300;
 }
-.cards .shoppingcards .card p {
+.container .cards .shoppingcards .card .price {
+  color: black;
+  text-decoration: none;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
+  font-size: 22px;
+  font-weight: 300;
+}
+.container .cards .shoppingcards .card p {
+  color: black;
+  text-decoration: none;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 200;
+  font-weight: 300;
   padding: 10px;
 }
 @media screen and (max-width: 800px) {
-  .cards .card {
+  .container .cards .shoppingcards {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .container .cards .shoppingcards .card {
     max-width: 100px;
-    margin: 0px;
+    margin: auto;
     padding: 0;
     text-align: center;
-    font-family: arial;
     gap: 20px;
     font-size: 15px;
   }
-  .cards .card img {
+  .container .cards .shoppingcards .card img {
     width: 100%;
     padding: 10px;
   }
