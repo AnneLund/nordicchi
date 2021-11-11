@@ -1,30 +1,45 @@
-header {
-  text-align: center;
-  // background-color: $farve;
-  h1 {
-    position: relative;
-    padding: 50px 0 0 0;
+.cards {
+  .shoppingcards {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    .card {
+      padding-bottom: 30px;
+      max-width: 300px;
+      margin: 60px;
+      text-align: center;
+      font-family: arial;
+      gap: 40px;
 
-    a {
-      @include title;
-    }
-  }
-}
+      img {
+        width: 50%;
+        padding: 20px;
+      }
 
-@media screen and (max-width: 800px) {
-  header {
-    h1 {
-      a {
-        font-size: 15vw;
+      .price {
+        color: grey;
+        font-size: 22px;
+      }
+
+      p {
+        padding: 10px;
       }
     }
   }
-}
 
-.logobjaelke {
-  text-align: center;
-  img {
-    width: 20vw;
-    z-index: -5;
+  @media screen and (max-width: 800px) {
+    .card {
+      max-width: 100px;
+      margin: 0px;
+      padding: 0;
+      text-align: center;
+      font-family: arial;
+      gap: 20px;
+      font-size: 15px;
+    }
+
+    .card img {
+      width: 100%;
+      padding: 10px;
+    }
   }
 }

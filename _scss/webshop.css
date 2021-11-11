@@ -1,0 +1,38 @@
+.cards .shoppingcards {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.cards .shoppingcards .card {
+  padding-bottom: 30px;
+  max-width: 300px;
+  margin: 60px;
+  text-align: center;
+  font-family: arial;
+  gap: 40px;
+}
+.cards .shoppingcards .card img {
+  width: 50%;
+  padding: 20px;
+}
+.cards .shoppingcards .card .price {
+  color: grey;
+  font-size: 22px;
+}
+.cards .shoppingcards .card p {
+  padding: 10px;
+}
+@media screen and (max-width: 800px) {
+  .cards .card {
+    max-width: 100px;
+    margin: 0px;
+    padding: 0;
+    text-align: center;
+    font-family: arial;
+    gap: 20px;
+    font-size: 15px;
+  }
+  .cards .card img {
+    width: 100%;
+    padding: 10px;
+  }
+}/*# sourceMappingURL=webshop.css.map */
