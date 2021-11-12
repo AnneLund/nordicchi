@@ -144,7 +144,7 @@ header h3 {
   transition: 1s;
 }
 .col-4 .hvad-er-traumer h3 .underline--stars {
-  background-image: url(/images/brush.png);
+  background-image: url(../images/brush.png);
   background-position: 0 1.4em;
   background-size: 23vw 5px;
   font-size: 2.5vw;
@@ -157,7 +157,7 @@ header h3 {
 }
 @media screen and (max-width: 800px) {
   .col-4 .hvad-er-traumer h3 .underline--stars {
-    background-image: url(/images/brush.png);
+    background-image: url(../images/brush.png);
     background-position: 0 1.7em;
     background-size: 46vw 3px;
     font-size: 2.5vw;
@@ -188,7 +188,7 @@ header h3 {
   transition: 1s;
 }
 .col-4 .button-three .collapsible h3 .underline--stars {
-  background-image: url(/images/brush.png);
+  background-image: url(../images/brush.png);
   background-position: 0 1.4em;
   background-size: 10.5vw 5px;
   font-size: 2.5vw;
@@ -201,7 +201,7 @@ header h3 {
 }
 @media screen and (max-width: 800px) {
   .col-4 .button-three .collapsible h3 .underline--stars {
-    background-image: url(/images/brush.png);
+    background-image: url(../images/brush.png);
     background-position: 0 1.7em;
     background-size: 22vw 3px;
     font-size: 2.5vw;
@@ -249,7 +249,7 @@ header h3 {
   transition: 1s;
 }
 .col-4 .button-four .collapsible h3 .underline--stars {
-  background-image: url(/images/brush.png);
+  background-image: url(../images/brush.png);
   background-position: 0 1.4em;
   background-size: 13vw 5px;
   font-size: 2.5vw;
@@ -262,7 +262,7 @@ header h3 {
 }
 @media screen and (max-width: 800px) {
   .col-4 .button-four .collapsible h3 .underline--stars {
-    background-image: url(/images/brush.png);
+    background-image: url(../images/brush.png);
     background-position: 0 1.7em;
     background-size: 26vw 3px;
     font-size: 2.5vw;

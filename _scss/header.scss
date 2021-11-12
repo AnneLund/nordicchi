@@ -50,138 +50,191 @@ $baggrund2: rgba(185, 185, 185, 0.055);
 
 body {
   position: relative;
-  background-color: $baggrund;}
+  background-color: $baggrund;
+}
+header {
+  text-align: center;
+  // background-color: $farve;
+  h1 {
+    position: relative;
+    padding: 50px 0 0 0;
+    a {
+      @include title;
+    }
+  }
+  h3 {
+    @include page-title;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
   header {
-    text-align: center;
-    // background-color: $farve;
     h1 {
-      position: relative;
-      padding: 50px 0 0 0;
       a {
-        @include title;
+        font-size: 15vw;
       }
     }
-    h3{
-      @include page-title;
-      padding: 0;
+
+    h3 {
+      font-size: 5vw;
     }
   }
+}
 
-  @media screen and (max-width: 800px) {
-    header {
-      h1 {
-        a {
-          font-size: 15vw;
+.logobjaelke {
+  text-align: center;
+  img {
+    width: 20vw;
+    z-index: -5;
+  }
+}
+
+.col-4 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+
+  // HVAD ER NORDIC CHI? //
+
+  .button-one {
+    .collapsible {
+      position: relative;
+      background: none;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      outline: none;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.753);
+        transition: 1s;
+      }
+
+      h3 {
+        .underline--stars {
+          background-image: url(/images/brush.png);
+          background-position: 0 1.4em;
+          background-size: 25.5vw 5px;
+          @include page-title;
+        }
+
+        .underline {
+          background-repeat: no-repeat;
         }
       }
 
-      h3{
-        font-size: 5vw;
-      }
-    }
-  }
-
-  .logobjaelke {
-    text-align: center;
-    img {
-      width: 20vw;
-      z-index: -5;
-    }
-  }
-
-  .col-4 {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-
-    // HVAD ER NORDIC CHI? //
-
-    .button-one {
-      .collapsible {
-        position: relative;
-        background: none;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        outline: none;
-
-        &:hover {
-          background-color: rgba(255, 255, 255, 0.753);
-          transition: 1s;
-        }
-
+      @media screen and (max-width: 800px) {
         h3 {
           .underline--stars {
             background-image: url(/images/brush.png);
-            background-position: 0 1.4em;
-            background-size: 25.5vw 5px;
+            background-position: 0 1.7em;
+            background-size: 52vw 3px;
             @include page-title;
+            font-size: 5vw;
           }
 
           .underline {
             background-repeat: no-repeat;
           }
         }
+      }
 
-        @media screen and (max-width: 800px) {
-          h3 {
-            .underline--stars {
-              background-image: url(/images/brush.png);
-              background-position: 0 1.7em;
-              background-size: 52vw 3px;
-              @include page-title;
-              font-size: 5vw;
-            }
+      .active {
+        background-color: #ccc;
+      }
+    }
 
-            .underline {
-              background-repeat: no-repeat;
-            }
-          }
+    .content {
+      position: absolute;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      background-color: $baggrund;
+
+      .text {
+        padding: 10px 50px 50px;
+        text-align: center;
+        h3 {
+          @include page-title;
+          text-align: center;
         }
 
-        .active {
-          background-color: #ccc;
+        p {
+          padding: 0;
         }
       }
 
-      .content {
-        position: absolute;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-        background-color: $baggrund;
-
+      @media screen and (max-width: 800px) {
         .text {
-          padding: 10px 50px 50px;
-          text-align: center;
+          padding: 20px 0;
           h3 {
-            @include page-title;
-            text-align: center;
+            font-size: 6vw;
           }
 
           p {
-            padding: 0;
-          }
-        }
-
-        @media screen and (max-width: 800px) {
-          .text {
-            padding: 20px 0;
-            h3 {
-              font-size: 6vw;
-            }
-
-            p {
-              padding: 10px;
-            }
+            padding: 10px;
           }
         }
       }
     }
+  }
 
-    // HVAD ER TRAUMER //
+  // HVAD ER TRAUMER //
 
-    .hvad-er-traumer {
+  .hvad-er-traumer {
+    position: relative;
+    background: none;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.753);
+      transition: 1s;
+    }
+
+    h3 {
+      .underline--stars {
+        background-image: url(../images/brush.png);
+        background-position: 0 1.4em;
+        background-size: 23vw 5px;
+        @include page-title;
+      }
+
+      .underline {
+        background-repeat: no-repeat;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      h3 {
+        .underline--stars {
+          background-image: url(../images/brush.png);
+          background-position: 0 1.7em;
+          background-size: 46vw 3px;
+          @include page-title;
+          font-size: 5vw;
+        }
+
+        .underline {
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    .active {
+      background-color: #ccc;
+    }
+  }
+
+  // OM MIG //
+
+  .button-three {
+    .collapsible {
       position: relative;
       background: none;
       cursor: pointer;
@@ -198,9 +251,9 @@ body {
 
       h3 {
         .underline--stars {
-          background-image: url(/images/brush.png);
+          background-image: url(../images/brush.png);
           background-position: 0 1.4em;
-          background-size: 23vw 5px;
+          background-size: 10.5vw 5px;
           @include page-title;
         }
 
@@ -212,9 +265,9 @@ body {
       @media screen and (max-width: 800px) {
         h3 {
           .underline--stars {
-            background-image: url(/images/brush.png);
+            background-image: url(../images/brush.png);
             background-position: 0 1.7em;
-            background-size: 46vw 3px;
+            background-size: 22vw 3px;
             @include page-title;
             font-size: 5vw;
           }
@@ -229,157 +282,101 @@ body {
         background-color: #ccc;
       }
     }
+    .content {
+      position: absolute;
+      left: 0;
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      background-color: $baggrund;
 
-    // OM MIG //
+      h3 {
+        @include page-title;
+        text-align: center;
+        font-size: 5vw;
+      }
+    }
+  }
 
-    .button-three {
-      .collapsible {
-        position: relative;
-        background: none;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        outline: none;
-        font-size: 15px;
+  // WEBSHOP //
 
-        &:hover {
-          background-color: rgba(255, 255, 255, 0.753);
-          transition: 1s;
+  .button-four {
+    .collapsible {
+      position: relative;
+      background: none;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      outline: none;
+      font-size: 15px;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.753);
+        transition: 1s;
+      }
+
+      h3 {
+        .underline--stars {
+          background-image: url(../images/brush.png);
+          background-position: 0 1.4em;
+          background-size: 13vw 5px;
+          @include page-title;
         }
 
+        .underline {
+          background-repeat: no-repeat;
+        }
+      }
+
+      @media screen and (max-width: 800px) {
         h3 {
           .underline--stars {
-            background-image: url(/images/brush.png);
-            background-position: 0 1.4em;
-            background-size: 10.5vw 5px;
+            background-image: url(../images/brush.png);
+            background-position: 0 1.7em;
+            background-size: 26vw 3px;
             @include page-title;
+            font-size: 5vw;
           }
 
           .underline {
             background-repeat: no-repeat;
           }
         }
-
-        @media screen and (max-width: 800px) {
-          h3 {
-            .underline--stars {
-              background-image: url(/images/brush.png);
-              background-position: 0 1.7em;
-              background-size: 22vw 3px;
-              @include page-title;
-              font-size: 5vw;
-            }
-
-            .underline {
-              background-repeat: no-repeat;
-            }
-          }
-        }
-
-        .active {
-          background-color: #ccc;
-        }
       }
-      .content {
-        position: absolute;
-        left: 0;
-        padding: 0 18px;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-        background-color: $baggrund;
 
-        h3 {
-          @include page-title;
-          text-align: center;
-          font-size: 5vw;
-        }
-      }
-    }
-
-    // WEBSHOP //
-
-    .button-four {
-      .collapsible {
-        position: relative;
-        background: none;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        outline: none;
-        font-size: 15px;
-
-        &:hover {
-          background-color: rgba(255, 255, 255, 0.753);
-          transition: 1s;
-        }
-
-        h3 {
-            
-
-            .underline--stars {
-              background-image: url(/images/brush.png);
-              background-position: 0 1.4em;
-              background-size: 13vw 5px;
-              @include page-title;
-            }
-           
-            .underline {
-              background-repeat: no-repeat;
-            }
-          }
-          
-          
-
-        @media screen and (max-width: 800px) {
-          h3 {
-            .underline--stars {
-              background-image: url(/images/brush.png);
-              background-position: 0 1.7em;
-              background-size: 26vw 3px;
-              @include page-title;
-              font-size: 5vw;
-            }
-
-            .underline {
-              background-repeat: no-repeat;
-            }
-          }
-        }
-
-        .active {
-          background-color: #ccc;
-        }
+      .active {
+        background-color: #ccc;
       }
     }
   }
+}
 
-  // MEDIAQUERIES
+// MEDIAQUERIES
 
-  @media screen and (max-width: 800px) {
-    .col-4 {
-      display: block;
-      padding: 20px;
+@media screen and (max-width: 800px) {
+  .col-4 {
+    display: block;
+    padding: 20px;
 
-      .collapsible {
-        h3 {
-          font-size: 5vw;
-        }
+    .collapsible {
+      h3 {
+        font-size: 5vw;
       }
+    }
 
-      .content {
-        z-index: 5;
-        h3 {
-          font-size: 5vw;
-        }
+    .content {
+      z-index: 5;
+      h3 {
+        font-size: 5vw;
       }
+    }
 
-      .hvad-er-traumer {
-        h3 {
-          font-size: 5vw;
-        }
+    .hvad-er-traumer {
+      h3 {
+        font-size: 5vw;
       }
     }
   }
+}
