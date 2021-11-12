@@ -14,6 +14,7 @@ html {
   scroll-behavior: smooth;
 }
 html body .traumer-container {
+  background-color: #f5f3ef;
   max-width: 1920px;
   margin: auto;
 }

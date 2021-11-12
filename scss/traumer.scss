@@ -52,26 +52,24 @@ html {
   scroll-behavior: smooth;
 
   body {
-    
-
     .traumer-container {
+      background-color: $baggrund;
       max-width: 1920px;
       margin: auto;
       header {
         text-align: center;
         position: relative;
-        h1{
-          
+        h1 {
           margin-bottom: 0;
-            position: relative;
-            padding: 50px 0 0 0;
-            a {
-              @include title;
-            }
+          position: relative;
+          padding: 50px 0 0 0;
+          a {
+            @include title;
+          }
         }
         h3 {
           @include page-title;
-            padding: 0;
+          padding: 0;
           margin-top: 0;
           font-size: 40px;
         }
@@ -178,7 +176,7 @@ html {
       }
 
       // SYMPTOMER PÅ TRAUMER-KNAP //
-// .symptomer{
+      // .symptomer{
       .button-six {
         .collapsible {
           @include links;
